@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+
+//Colors
+$primary:#FEFF00;
+$secondary:#00CD5F;
+$black:#000000;
+$dark:#2D3632;
+$white:#ffffff;
+$blue:#1CA5D6;
+$yellow:#F2E25F;
+$gray:#999999;
+$gray-dark:#666666;
+$gray-bg:#f0f0f0;
+$body-color:$dark;
+$link:$secondary;
+
+//Fonts
+$family-sans-serif: 'Inter', sans-serif;
+$title-family:'VastagoGrotesk-Black', Georgia, Times, 'Times New Roman', serif;
+$title-weight:normal;
+$tiny:12px;
+$small:14px;
+$regular:16px;
+$semi-bold:600;
+$bold:700;
+$radius-lg:3rem;
+$radius:1rem;
+
+
+
+//MIXINS
+
+//Radius
+@mixin radius{
+    border-radius: $radius;
+}
+@mixin radius-lg{
+    border-radius: $radius-lg;
+}
+
+//Box shadow
+@mixin box-shadow{
+    -webkit-box-shadow: 0px 0px 22px -4px rgba($dark,0.25);
+    -moz-box-shadow: 0px 0px 22px -4px rgba($dark,0.25);
+    box-shadow: 0px 0px 22px -4px rgba($dark,0.25);
+}
+
+//Animation transition
+@mixin transition{
+    transition: all 0.3s ease;
+}
+
+//Short content
+@mixin short-content{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+
+//Bulma stuff
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/grid/_all.sass";
+@import "../node_modules/bulma/sass/components/navbar.sass";
+@import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/components/dropdown.sass";
+@import "../node_modules/bulma/sass/helpers/_all.sass";
+@import "../node_modules/bulma/sass/form/_all";
+@import "../node_modules/bulma/sass/elements/button.sass";
+// @import "../node_modules/bulma/sass/components/tabs.sass";
+// @import "../node_modules/bulma/sass/components/pagination.sass";
+
+
+//Custom
+@import "typography.scss";
+@import "reveal.scss";
+@import "layout.scss";
+@import "sections.scss";
+@import "navigation.scss";
+@import "components.scss";
+@import "banners.scss";
+@import "buttons.scss";
+@import "cards.scss";

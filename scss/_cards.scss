@@ -1,0 +1,75 @@
+//eventos
+.evento{
+    @include radius;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    border: 1px solid $dark;
+    position: relative;
+    display: flex;
+    color: $dark;
+    height: 100%;
+    margin-bottom: 2rem;
+    @include tablet{
+        margin-bottom: 0;
+    }
+    .card-wrapper{
+        display: flex;
+        flex-direction: column;
+        .card-header{
+            position: relative;
+            // transform: translateY(-2rem);
+            transition: transform .5s;
+            margin-top: -1.5rem;
+            img{
+                aspect-ratio: 14 / 9;
+                object-fit: cover;
+                @include radius;
+            }
+        }
+        .card-content{
+            flex: 1;
+            margin-top: 1rem;
+            .category{
+                text-transform: uppercase;
+                @include fs-small;
+                margin-bottom: 1rem;
+            }
+            h3{
+                line-height: 1.1;
+            }
+        }
+        .card-footer{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 1rem;
+            .day{
+                font-weight: $semi-bold;
+                font-size: $small;
+                @include tablet{
+                    @include fs-regular;
+                }
+                span{
+                    font-weight: 400;
+                }
+            }
+            .time{
+                text-align: right;
+                font-size: $small;
+                @include tablet{
+                    @include fs-regular;
+                }
+            }
+        }
+    }
+    &:hover, &:active{
+        background-color: $primary;
+        color: $black;
+        .card-header{
+            // transform: translateY(-2.5rem);
+            transform: rotate(2deg);
+            img{
+                @include box-shadow;
+            }
+        }
+    }
+}

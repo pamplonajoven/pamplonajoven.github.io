@@ -1,0 +1,79 @@
+//Banner info parallax
+.banner-info{
+    background-image: url("../images/banner-info-sm.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-color: $dark;
+    position: relative;
+    @include desktop{
+        background-image: url("../images/banner-info.jpg");
+        background-attachment: fixed;
+    }
+    &:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% ;
+        height: 100%;
+        background-color: rgba($dark, .6);
+    }
+    .columns-banner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 1.5rem;
+        @include desktop{
+            flex-direction: row;
+        }
+        @include widescreen{
+            @include short-content;
+        }
+        .claim{
+            text-align: center;
+            @include desktop{
+                text-align: left;
+                width: 65%;
+            }
+            span{
+                color: $primary;
+            }
+        }
+    }
+}
+
+//Banner newsletter
+.banner-newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: $secondary;
+    padding: 1.5rem 4rem 1.5rem 2rem;
+    @include radius;
+    height: 100%;
+    background-image: url("../images/newsletter.svg");
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 30%;
+    padding-right: 30%;
+    transition: transform .5s;
+    @include desktop{
+        background-size: 8rem;
+    }
+    h3{
+        line-height: 1.1;
+    }
+    p{
+        color: $dark;
+    }
+    &:hover, &:active{
+        transform: rotate(2deg);
+        @include box-shadow;
+    }
+    
+}

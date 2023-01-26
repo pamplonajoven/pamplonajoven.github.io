@@ -1,0 +1,63 @@
+.accordions{
+    @include widescreen{
+        @include short-content;
+    }
+    .accordion{
+        background-color: rgba($white, .6);
+        @include radius;
+        padding: 1.5rem;
+        @include transition;
+        margin-bottom: .5rem;
+        position: relative;
+        overflow: hidden;
+        .accordion-header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            z-index: 2;
+        }
+        .accordion-icon{
+            line-height: 0;
+            .icon{
+                border-radius: 100px;
+                color: $dark;
+                font-size: 30px;
+            }
+        }
+        .accordion-content{
+            padding-top: 1rem;
+            display: none;
+            min-height: 12rem;
+            img{
+                @include radius;
+                @include desktop{
+                    position: absolute;
+                    height: 105%;
+                    top: 0;
+                    right: -1%;
+                    z-index: 0;
+                    transform: rotate(-3deg);
+                    ////
+                    aspect-ratio: 1 / 1;
+                    object-fit: cover;
+                    width: 40%;
+                }
+            }
+        }
+        &:hover, &:active{
+            background-color: $white;
+            @include box-shadow;
+        }
+        &.is-active{
+            background-color: $white;
+            @include box-shadow;
+            .icon{
+                background-color: $white;
+            }
+            .accordion-content{
+                display: block;
+            }
+        }
+    }
+}

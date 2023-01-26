@@ -1,0 +1,127 @@
+html {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+::selection {
+	background: $primary;
+	color: $dark;
+  }
+
+body{
+	font-family: $family-sans-serif;
+	color: $dark;
+    background-color: $gray-bg;
+	@include fs-regular;
+	line-height: 1.2;
+}
+
+main.main{
+	position: relative;
+	z-index: 3;
+}
+
+.container.is-fluid{
+	padding: 0;
+}
+
+.container.is-max-desktop{
+	@include desktop{
+		max-width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+//header
+header.hero{
+	position: relative;
+	background-color: $black;
+	@include radius;
+	@include tablet{
+		@include radius-lg;
+	}
+	.hero-image{
+		img{
+			aspect-ratio: 1 / 1;
+			object-fit: cover;
+			min-width: 100%;
+			@include radius;
+			@include tablet{
+				@include radius-lg;
+				aspect-ratio: 16 / 9;
+			}
+			display: block;
+			opacity: .4;
+			@include desktop{
+				aspect-ratio: 22 / 9;
+			}
+		}
+	}
+	.hero-copy{
+		position: absolute;
+		top: 4rem;
+		height: calc(100% - 8rem);
+		width: 100%;
+		z-index: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 0 1rem;
+		h1{
+			line-height: 1.1;
+			color: $white;
+		}
+	}
+}
+
+.hero-nav{
+	position: absolute;
+	top: 1rem;
+	left: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+    padding: 1rem 5%;
+	justify-content: center;
+	z-index: 2;
+	@include desktop{
+		justify-content: space-between;
+	}
+}
+
+//footer
+footer.footer{
+	background-color: $white;
+	padding: 3rem 1rem;
+	@include desktop{
+		padding: 3rem 0;
+	}
+	a{
+		color:$black;
+		&:hover, &:active{
+			color: $secondary;
+		}
+	}
+	h4{
+		width: 28ch;
+		margin-bottom: .25rem;
+	}
+	.col-footer{
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	.address:not(:last-of-type){
+		margin-bottom: 1.5rem;
+	}
+	.legal-text{
+		margin-top: auto;
+		font-size: $tiny;
+		color: $gray-dark;
+		@include fullhd{
+			font-size: $small;
+		}
+	}
+}

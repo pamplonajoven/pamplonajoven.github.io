@@ -1,0 +1,43 @@
+section.section{
+	background-color: $white;
+	padding: 1rem;
+	position: relative;
+	z-index: 1;
+	@include radius;
+	@include tablet{
+		@include radius-lg;
+		padding: 1rem 1rem 3rem 1rem;
+	}
+	&.section-hero{
+		background-color: $white;
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+	}
+	&.section-secondary{
+		background-color: $secondary;
+	}
+	&.section-banner{
+		background-color: $dark;
+		position: relative;
+		min-height: 400px;
+		color: $white;
+		display: flex;
+		align-items: center;
+		border-radius: 0;
+		margin-top: -3rem;
+		padding-top: 6rem;
+        margin-bottom: -3rem;
+		padding-bottom: 6rem;
+		z-index: 0;
+	}
+}
+
+//Radius states
+.radius-top{
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.radius-bottom{
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}

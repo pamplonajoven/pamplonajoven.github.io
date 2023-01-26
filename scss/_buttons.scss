@@ -1,0 +1,36 @@
+@mixin has-icon{
+    content: "";
+    font-family: 'Material Symbols Outlined';
+    font-size: 22px;
+    color: $dark;
+    margin-right: .3rem;
+}
+
+button,.button{
+    font-weight: $bold;
+    text-transform: uppercase;
+    border-radius: 100px;
+    @include fs-regular;
+    line-height: initial;
+    padding: 2rem;
+    border: 1px solid $dark;
+    color: $dark;
+    transition: transform .5s;
+    &:hover, &:active{
+        transform: rotate(2deg);
+    }
+    &.is-primary{
+        border: 1px solid $dark;
+        background-color: $primary;
+        &:hover, &:active{
+            background-color: $white;
+            border: 1px solid $black;
+        }
+    }
+    &.has-arrow{
+        &:before{
+            @include has-icon;
+            content: "\e941";
+        }
+    }
+}

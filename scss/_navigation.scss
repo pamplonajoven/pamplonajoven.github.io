@@ -1,0 +1,237 @@
+.navbar.navbar-custom{
+    align-items: center;
+    @include desktop{
+        padding: 0 3rem;
+    }
+    .navbar-menu{
+        align-items: center;
+        a.navbar-item, a.navbar-link{
+            border-radius: 100px;
+            border: 1px solid $gray;
+            background-color: $white;
+            color: $dark;
+            padding-top: .3rem;
+            padding-bottom: .3rem;
+            font-weight: $semi-bold;
+            transition: transform .5s;
+            @include desktop{
+                font-size: 18px;
+            }
+            &:hover, &:active, &.is-active{
+                background-color: $primary;
+                border-color: $dark;
+                transform: rotate(2deg);
+            }
+        }
+        // El menú abierto en responsive vertical
+        &.is-active{
+            background-color: $white;
+            padding: 1rem;
+            a.navbar-item, a.navbar-link{
+                padding-top: .6rem;
+                padding-bottom: .6rem;
+                padding-left: 1rem;
+                margin-bottom: .5rem;
+            }
+            .navbar-dropdown{
+                margin-bottom: .5rem;
+            }
+        }
+    }
+    .navbar-brand{
+        align-items: center;
+        .navbar-item.is-logo{
+            img{
+                max-height: 4rem;
+                @include desktop{
+                    max-height: 5rem;
+                    margin-top: -20%;
+                }
+            }
+            transition: transform .5s;
+            &:hover, &:active, &.is-active{
+                transform: rotate(2deg);
+            }
+        }
+        .navbar-burger{
+            border: 1px solid $gray;
+            border-radius: 100px;
+            margin-right: .75rem;
+        }
+    }
+    .navbar-dropdown{
+        font-size: 1rem;
+        border-top: none;
+        border-radius: 16px;
+        border: 1px solid $gray;
+        overflow: hidden;
+        padding: 0;
+        margin-top: -1px;
+        @include box-shadow;
+        .navbar-item.dropdown-item{
+            border: none;
+            border-radius: 0;
+            @include fs-regular;
+            display: flex;
+            background-color: transparent;
+            padding: .5rem 1rem;
+            transition: none;
+            span{
+                width: 30px;
+                color: $gray;
+            }
+            &:hover, &:active{
+                transform: none;
+            }
+        }
+    }
+}
+
+
+//Navbar secondary
+.navbar-secondary{
+    background-color: $white;
+    display: none;
+    margin-top: .5rem;
+    padding: 0 3rem;
+    @include desktop{
+        display: block;
+    }
+    .secondary-menu{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: row;
+        text-align: right;
+        gap: 1rem;
+        @include fs-small;
+        .nav-item{
+            a{
+                color: $dark;
+            }
+            .language{
+                a{
+                    color: $gray;
+                    &.is-active{
+                        color: $dark;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Language selector
+.language{
+    a{
+        color: $gray;
+        &.is-active{
+            color: $dark;
+        }
+    }
+}
+
+//Custom arrow for dropdown
+.navbar-link:not(.is-arrowless)::after{
+    border-color:$dark;
+    border-radius: 0;
+    border-width: 1px;
+    margin-top: -0.45em;
+}
+
+//Breadcrumbs
+.breadcrumbs{
+    ul{
+        display: flex;
+        flex-direction: row;
+        gap: .5rem;
+        li{
+            font-size: $small;
+            @include desktop{
+                font-size: $regular;
+            }
+            color: $primary;
+            a{
+                color: $white;
+            }
+            &:not(:last-child):after{
+                content: "/";
+                display: inline;
+                padding-left: .25rem;
+            }
+        }
+    }
+}
+
+//Anchors
+.anchors{
+    display: none;
+    @include desktop{
+        display: flex;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        li{
+            a{
+                color: $white;
+                &:hover, &:active{
+                    color: $primary;
+                }
+            }
+            &.is-active{
+                a{
+                    color: $primary;
+                }
+            }
+        }
+    }
+}
+
+//Anchors sticky when scrolling
+.anchors-top{
+    position: fixed;
+    top: 0;
+    background-color: $white;
+    width: 100%;
+    left: 0;
+    z-index: 9999;
+    justify-content: center;
+    padding: .75rem;
+    display: none;
+    &.show{
+        @include desktop{
+            display: block;
+        }
+    }
+    &.hide{
+        display: none;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+        li{
+            a{
+                color: $gray;
+                &:hover{
+                    color: $dark;
+                }
+            }
+            &.is-active{
+                a{
+                    color: $dark;
+                }
+            }
+        }
+    }
+}
+
+//Bug anchors position
+.is-anchored{
+    display: block;
+    padding-top: 3rem;
+    margin-top: -3rem;
+}
