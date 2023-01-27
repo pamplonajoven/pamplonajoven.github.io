@@ -5,6 +5,7 @@
     }
     .navbar-menu{
         align-items: center;
+        margin-right: 0;
         a.navbar-item, a.navbar-link{
             border-radius: 100px;
             border: 1px solid $gray;
@@ -13,14 +14,12 @@
             padding-top: .3rem;
             padding-bottom: .3rem;
             font-weight: $semi-bold;
-            transition: transform .5s;
             @include desktop{
                 font-size: 18px;
             }
             &:hover, &:active, &.is-active{
                 background-color: $primary;
                 border-color: $dark;
-                transform: rotate(2deg);
             }
         }
         // El menú abierto en responsive vertical
@@ -75,7 +74,6 @@
             display: flex;
             background-color: transparent;
             padding: .5rem 1rem;
-            transition: none;
             span{
                 width: 30px;
                 color: $gray;
@@ -198,7 +196,8 @@
     left: 0;
     z-index: 9999;
     justify-content: center;
-    padding: .75rem;
+    padding: 1rem;
+    @include box-shadow;
     display: none;
     &.show{
         @include desktop{
@@ -216,6 +215,7 @@
         li{
             a{
                 color: $gray;
+                font-weight: $semi-bold;
                 &:hover{
                     color: $dark;
                 }

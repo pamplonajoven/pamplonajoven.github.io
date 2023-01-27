@@ -1,9 +1,6 @@
 .accordions{
-    @include widescreen{
-        @include short-content;
-    }
     .accordion{
-        background-color: rgba($white, .6);
+        background-color: rgba($white, .7);
         @include radius;
         padding: 1.5rem;
         @include transition;

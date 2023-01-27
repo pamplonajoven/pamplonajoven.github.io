@@ -1,14 +1,18 @@
-.reveal{
-    position: relative;
-    transform: translateY(30px);
-    opacity: 1;
-    transition: 1s all ease;
-  }
+// .reveal{
+//     position: relative;
+//     transform: translateY(30px);
+//     opacity: 1;
+//     transition: .75s all ease;
+//     @include desktop{
+//       opacity: 0;
+//       transform: translateY(50px);
+//     }
+//   }
 
-  .reveal.active{
-    transform: translateY(0);
-    opacity: 1;
-  }
+//   .reveal.active{
+//     transform: translateY(0);
+//     opacity: 1;
+//   }
 
     //Other animations
     .fade-in{

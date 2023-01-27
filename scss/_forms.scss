@@ -1,0 +1,37 @@
+:root {
+accent-color: $primary;
+}
+
+*:focus{
+outline: none;
+}
+
+.control{
+    input,textarea{
+        box-shadow: none;
+        padding: 1.5rem;
+        &:hover, &:focus, &:active{
+            border-color: $primary;
+            @include box-shadow;
+            &::placeholder{
+                color: $dark;
+            }
+        }
+    }
+}
+
+
+form.is-dark{
+    color: $white;
+    a{
+        color: $primary;
+        &:hover, &:active{
+            color: $white;
+        }
+    }
+    label.checkbox{
+        &:hover{
+            color: $white;
+        }
+    }
+}

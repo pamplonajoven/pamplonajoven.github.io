@@ -3,52 +3,23 @@ html {
 	overflow-x: hidden;
 }
 
-::selection {
-	background: $primary;
-	color: $dark;
-  }
-
-body{
-	font-family: $family-sans-serif;
-	color: $dark;
-    background-color: $gray-bg;
-	@include fs-regular;
-	line-height: 1.2;
-}
-
 main.main{
 	position: relative;
 	z-index: 3;
-}
-
-.container.is-fluid{
-	padding: 0;
-}
-
-.container.is-max-desktop{
-	@include desktop{
-		max-width: 70%;
-		margin-left: auto;
-		margin-right: auto;
-	}
 }
 
 //header
 header.hero{
 	position: relative;
 	background-color: $black;
-	@include radius;
-	@include tablet{
-		@include radius-lg;
-	}
+	border-radius: 2rem;
 	.hero-image{
 		img{
 			aspect-ratio: 1 / 1;
 			object-fit: cover;
 			min-width: 100%;
-			@include radius;
+			border-radius: 2rem;
 			@include tablet{
-				@include radius-lg;
 				aspect-ratio: 16 / 9;
 			}
 			display: block;
@@ -93,7 +64,6 @@ header.hero{
 
 //footer
 footer.footer{
-	background-color: $white;
 	padding: 3rem 1rem;
 	@include desktop{
 		padding: 3rem 0;
@@ -123,5 +93,20 @@ footer.footer{
 		@include fullhd{
 			font-size: $small;
 		}
+	}
+}
+
+//cta
+.cta-container{
+	margin: 2rem auto;
+}
+
+//Flex shortcodes
+
+.d-flex{
+	display: flex;
+	align-items: center;
+	&.space-between{
+		justify-content: space-between;
 	}
 }

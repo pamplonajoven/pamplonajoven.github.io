@@ -14,11 +14,13 @@ $gray-dark:#666666;
 $gray-bg:#f0f0f0;
 $body-color:$dark;
 $link:$secondary;
+$input-placeholder-color:$gray-dark;
 
 //Fonts
 $family-sans-serif: 'Inter', sans-serif;
 $title-family:'VastagoGrotesk-Black', Georgia, Times, 'Times New Roman', serif;
 $title-weight:normal;
+$regular-weight:400;
 $tiny:12px;
 $small:14px;
 $regular:16px;
@@ -35,6 +37,10 @@ $radius:1rem;
 @mixin radius{
     border-radius: $radius;
 }
+@mixin radius-top{
+    border-radius-top-left: $radius;
+    border-radius-top-right: $radius;
+}
 @mixin radius-lg{
     border-radius: $radius-lg;
 }
@@ -49,12 +55,6 @@ $radius:1rem;
 //Animation transition
 @mixin transition{
     transition: all 0.3s ease;
-}
-
-//Short content
-@mixin short-content{
-    padding-left: 15%;
-    padding-right: 15%;
 }
 
 
@@ -82,3 +82,4 @@ $radius:1rem;
 @import "banners.scss";
 @import "buttons.scss";
 @import "cards.scss";
+@import "forms.scss";

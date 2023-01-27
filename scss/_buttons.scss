@@ -15,9 +15,10 @@ button,.button{
     padding: 2rem;
     border: 1px solid $dark;
     color: $dark;
-    transition: transform .5s;
     &:hover, &:active{
-        transform: rotate(2deg);
+        @include box-shadow;
+        border-color: $dark;
+        color: $black;
     }
     &.is-primary{
         border: 1px solid $dark;
@@ -31,6 +32,18 @@ button,.button{
         &:before{
             @include has-icon;
             content: "\e941";
+        }
+    }
+    &.has-tel{
+        &:before{
+            @include has-icon;
+            content: "\e0b0";
+        }
+    }
+    &.has-mail{
+        &:before{
+            @include has-icon;
+            content: "\e158";
         }
     }
 }

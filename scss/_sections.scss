@@ -6,19 +6,26 @@ section.section{
 	@include radius;
 	@include tablet{
 		@include radius-lg;
-		padding: 1rem 1rem 3rem 1rem;
+	}
+	@include widescreen{
+		padding-bottom: 3rem;
 	}
 	&.section-hero{
 		background-color: $white;
 		border-top-left-radius: 0;
 		border-top-right-radius: 0;
+		@include tablet{
+			padding: 1rem 2rem 2rem;
+		}
+		@include widescreen{
+			padding-bottom: 2rem;
+		}
 	}
 	&.section-secondary{
 		background-color: $secondary;
 	}
 	&.section-banner{
 		background-color: $dark;
-		position: relative;
 		min-height: 400px;
 		color: $white;
 		display: flex;
@@ -29,6 +36,25 @@ section.section{
         margin-bottom: -3rem;
 		padding-bottom: 6rem;
 		z-index: 0;
+	}
+	&.section-contact{
+		background-color: $dark;
+		background-image: url("../images/casa-contacto.jpg");
+		background-repeat: no-repeat;
+		background-position: top center;
+		background-size: contain;
+		background-blend-mode: multiply;
+		align-items: center;
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+		margin-top: -3rem;
+		padding-top: 6rem;
+		z-index: 0;
+		h2, .lead{
+			color: $white;
+		}
+		
+
 	}
 }
 

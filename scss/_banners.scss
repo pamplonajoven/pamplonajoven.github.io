@@ -25,22 +25,27 @@
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 3rem;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 80%;
         @include desktop{
             flex-direction: row;
-        }
-        @include widescreen{
-            @include short-content;
         }
         .claim{
             text-align: center;
             @include desktop{
                 text-align: left;
-                width: 65%;
+                width: 28ch;
             }
             span{
                 color: $primary;
             }
+        }
+        .button{
+           @include desktop{
+            margin-left: auto;
+           }
         }
     }
 }
@@ -70,6 +75,7 @@
     }
     p{
         color: $dark;
+        font-weight: $semi-bold;
     }
     &:hover, &:active{
         transform: rotate(2deg);

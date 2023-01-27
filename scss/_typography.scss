@@ -37,7 +37,20 @@
 }
 
 @mixin fs-title3{
-	font-size: clamp(20px, 2vw, 22px);
+	font-size: clamp(18px, 2vw, 22px);
+}
+
+::selection {
+	background: $primary;
+	color: $dark;
+  }
+
+body{
+	font-family: $family-sans-serif;
+	color: $dark;
+    background-color: $gray-bg;
+	@include fs-regular;
+	line-height: 1.2;
 }
 
 a{
@@ -58,7 +71,7 @@ h2{
 	font-family: $title-family;
 	color: $dark;
 	text-align: center;
-	padding: 1.5rem 1rem 2rem;
+	padding: 3rem 1rem;
 	line-height: 1.2;
 }
 
@@ -72,6 +85,11 @@ h3{
 h4{
 	font-weight: $bold;
 	text-transform: uppercase;
+	span{
+		text-transform: none;
+		color: $gray;
+		font-weight: $regular-weight;
+	}
 }
 
 .claim{
@@ -95,6 +113,18 @@ h4{
 	}
 }
 
+.strong,strong,b{
+	font-weight: $bold;
+}
+
+.text-colophon{
+	text-align: center;
+	margin: 1rem auto 3rem auto;
+	@include tablet{
+		width: 60ch;
+	}
+}
+
 
 //Lists
 
@@ -110,6 +140,15 @@ h4{
 			color: $secondary;
 			margin-right: .3rem;
 		}
+	}
+}
+
+.list-bullets{
+	padding-left: 1rem;
+	li{
+		list-style: disc;
+		margin-bottom: .5rem;
+		line-height: 1.3;
 	}
 }
 
