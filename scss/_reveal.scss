@@ -1,26 +1,26 @@
-.reveal{
-    position: relative;
-    transform: translateY(30px);
-    opacity: 1;
-    transition: .75s all ease;
-    @include desktop{
-      opacity: 0;
-      transform: translateY(50px);
-    }
-  }
+// .reveal{
+//     position: relative;
+//     transform: translateY(30px);
+//     opacity: 1;
+//     transition: .75s all ease;
+//     @include desktop{
+//       opacity: 0;
+//       transform: translateY(50px);
+//     }
+//   }
 
-  .reveal.active{
-    transform: translateY(0);
-    opacity: 1;
-  }
+//   .reveal.active{
+//     transform: translateY(0);
+//     opacity: 1;
+//   }
 
-  h2.reveal{
+  h2.has-bg.reveal{
     &:before{
       width: 0;
     }
     &.active{
       &::before{
-        width: 15%;
+        width: 200px;
       }
     }
   }

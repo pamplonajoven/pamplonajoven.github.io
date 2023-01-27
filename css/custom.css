@@ -5535,7 +5535,7 @@ h2 {
   @media screen and (min-width: 769px), print {
     h2 {
       padding: 3rem 1rem; } }
-  h2::before {
+  h2.has-bg::before {
     content: "";
     display: block;
     position: absolute;
@@ -5543,12 +5543,12 @@ h2 {
     border-radius: 100px;
     background-color: #FEFF00;
     height: 40px;
-    width: 15%;
+    width: 100px;
     margin: 0 auto;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(3deg);
-    transition: width 2s;
+    transition: width 1.5s;
     mix-blend-mode: multiply; }
 
 h3 {
@@ -5631,25 +5631,11 @@ h4 {
 .list-legal li:not(:last-of-type) {
   margin-bottom: .2rem; }
 
-.reveal {
-  position: relative;
-  transform: translateY(30px);
-  opacity: 1;
-  transition: .75s all ease; }
-  @media screen and (min-width: 1024px) {
-    .reveal {
-      opacity: 0;
-      transform: translateY(50px); } }
-
-.reveal.active {
-  transform: translateY(0);
-  opacity: 1; }
-
-h2.reveal:before {
+h2.has-bg.reveal:before {
   width: 0; }
 
-h2.reveal.active::before {
-  width: 15%; }
+h2.has-bg.reveal.active::before {
+  width: 200px; }
 
 .fade-in {
   animation: fadeIn ease 1.5s;
