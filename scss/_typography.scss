@@ -76,6 +76,24 @@ h2{
 	@include tablet{
 		padding: 3rem 1rem;
 	}
+	position: relative;
+	z-index: 1;
+	&::before{
+		content: "";
+		display: block;
+		position: absolute;
+		z-index: -1;
+		border-radius: 100px;
+		background-color: $primary;
+		height: 40px;
+		width: 15%;
+		margin: 0 auto;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%) rotate(3deg) ;
+		transition: width 2s;
+		mix-blend-mode: multiply;
+	}
 }
 
 h3{

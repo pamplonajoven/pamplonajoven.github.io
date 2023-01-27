@@ -14,6 +14,17 @@
     opacity: 1;
   }
 
+  h2.reveal{
+    &:before{
+      width: 0;
+    }
+    &.active{
+      &::before{
+        width: 15%;
+      }
+    }
+  }
+
     //Other animations
     .fade-in{
       animation: fadeIn ease 1.5s;
