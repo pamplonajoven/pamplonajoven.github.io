@@ -5614,6 +5614,20 @@ h4 {
 .list-legal li:not(:last-of-type) {
   margin-bottom: .2rem; }
 
+.reveal {
+  position: relative;
+  transform: translateY(30px);
+  opacity: 1;
+  transition: .75s all ease; }
+  @media screen and (min-width: 1024px) {
+    .reveal {
+      opacity: 0;
+      transform: translateY(50px); } }
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1; }
+
 .fade-in {
   animation: fadeIn ease 1.5s;
   animation-iteration-count: 1;
