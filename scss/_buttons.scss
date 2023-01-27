@@ -15,6 +15,7 @@ button,.button{
     padding: 2rem;
     border: 1px solid $dark;
     color: $dark;
+    @include rotate;
     &:hover, &:active{
         @include box-shadow;
         border-color: $dark;

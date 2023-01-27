@@ -15,7 +15,7 @@ header.hero{
 	border-radius: 2rem;
 	.hero-image{
 		img{
-			aspect-ratio: 1 / 1;
+			aspect-ratio: 1 / 2;
 			object-fit: cover;
 			min-width: 100%;
 			border-radius: 2rem;
@@ -87,9 +87,12 @@ footer.footer{
 		margin-bottom: 1.5rem;
 	}
 	.legal-text{
-		margin-top: auto;
+		margin-top:1rem;
 		font-size: $tiny;
 		color: $gray-dark;
+		@include tablet{
+			margin-top: auto;
+		}
 		@include fullhd{
 			font-size: $small;
 		}
@@ -109,4 +112,9 @@ footer.footer{
 	&.space-between{
 		justify-content: space-between;
 	}
+}
+
+//My spacing
+.mt-2{
+	margin-top: 2rem !important;
 }

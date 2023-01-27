@@ -57,6 +57,14 @@ $radius:1rem;
     transition: all 0.3s ease;
 }
 
+//Animation rotate
+@mixin rotate{
+    transition: transform .4s;
+    &:hover, &:active, &.is-active{
+        transform: rotate(3deg);
+    }
+}
+
 
 //Bulma stuff
 @import "../node_modules/bulma/sass/utilities/_all.sass";

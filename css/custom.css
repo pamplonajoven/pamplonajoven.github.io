@@ -5528,8 +5528,11 @@ h2 {
   font-family: "VastagoGrotesk-Black", Georgia, Times, "Times New Roman", serif;
   color: #2D3632;
   text-align: center;
-  padding: 3rem 1rem;
+  padding: 2rem 1rem 1.5rem 1rem;
   line-height: 1.2; }
+  @media screen and (min-width: 769px), print {
+    h2 {
+      padding: 3rem 1rem; } }
 
 h3 {
   font-size: clamp(18px, 2vw, 22px);
@@ -5635,7 +5638,7 @@ header.hero {
   background-color: #000000;
   border-radius: 2rem; }
   header.hero .hero-image img {
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1 / 2;
     object-fit: cover;
     min-width: 100%;
     border-radius: 2rem;
@@ -5695,9 +5698,12 @@ footer.footer {
   footer.footer .address:not(:last-of-type) {
     margin-bottom: 1.5rem; }
   footer.footer .legal-text {
-    margin-top: auto;
+    margin-top: 1rem;
     font-size: 12px;
     color: #666666; }
+    @media screen and (min-width: 769px), print {
+      footer.footer .legal-text {
+        margin-top: auto; } }
     @media screen and (min-width: 1408px) {
       footer.footer .legal-text {
         font-size: 14px; } }
@@ -5710,6 +5716,9 @@ footer.footer {
   align-items: center; }
   .d-flex.space-between {
     justify-content: space-between; }
+
+.mt-2 {
+  margin-top: 2rem !important; }
 
 section.section {
   background-color: #ffffff;
@@ -5808,17 +5817,22 @@ section.section {
     .navbar.navbar-custom .navbar-brand .navbar-item.is-logo {
       transition: transform .5s; }
       .navbar.navbar-custom .navbar-brand .navbar-item.is-logo img {
-        max-height: 4rem; }
+        max-height: 4.5rem; }
         @media screen and (min-width: 1024px) {
           .navbar.navbar-custom .navbar-brand .navbar-item.is-logo img {
-            max-height: 5rem;
-            margin-top: -20%; } }
+            max-height: 6rem;
+            margin-top: -16%; } }
       .navbar.navbar-custom .navbar-brand .navbar-item.is-logo:hover, .navbar.navbar-custom .navbar-brand .navbar-item.is-logo:active, .navbar.navbar-custom .navbar-brand .navbar-item.is-logo.is-active {
         transform: rotate(2deg); }
     .navbar.navbar-custom .navbar-brand .navbar-burger {
       border: 1px solid #999999;
       border-radius: 100px;
       margin-right: .75rem; }
+      .navbar.navbar-custom .navbar-brand .navbar-burger:hover, .navbar.navbar-custom .navbar-brand .navbar-burger:active, .navbar.navbar-custom .navbar-brand .navbar-burger.is-active {
+        background-color: #FEFF00;
+        border-color: #2D3632; }
+        .navbar.navbar-custom .navbar-brand .navbar-burger:hover span, .navbar.navbar-custom .navbar-brand .navbar-burger:active span, .navbar.navbar-custom .navbar-brand .navbar-burger.is-active span {
+          background-color: #2D3632; }
   .navbar.navbar-custom .navbar-dropdown {
     font-size: 1rem;
     border-top: none;
@@ -5922,7 +5936,8 @@ section.section {
   -webkit-box-shadow: 0px 0px 22px -4px rgba(45, 54, 50, 0.25);
   -moz-box-shadow: 0px 0px 22px -4px rgba(45, 54, 50, 0.25);
   box-shadow: 0px 0px 22px -4px rgba(45, 54, 50, 0.25);
-  display: none; }
+  display: none;
+  font-size: 18px; }
   @media screen and (min-width: 1024px) {
     .anchors-top.show {
       display: block; } }
@@ -6080,7 +6095,10 @@ button, .button {
   line-height: initial;
   padding: 2rem;
   border: 1px solid #2D3632;
-  color: #2D3632; }
+  color: #2D3632;
+  transition: transform .4s; }
+  button:hover, button:active, button.is-active, .button:hover, .button:active, .button.is-active {
+    transform: rotate(3deg); }
   button:hover, button:active, .button:hover, .button:active {
     -webkit-box-shadow: 0px 0px 22px -4px rgba(45, 54, 50, 0.25);
     -moz-box-shadow: 0px 0px 22px -4px rgba(45, 54, 50, 0.25);
@@ -6122,11 +6140,7 @@ button, .button {
   position: relative;
   display: flex;
   color: #2D3632;
-  height: 100%;
-  margin-bottom: 2rem; }
-  @media screen and (min-width: 769px), print {
-    .evento {
-      margin-bottom: 0; } }
+  height: 100%; }
   .evento .card-wrapper {
     display: flex;
     flex-direction: column; }
@@ -6172,14 +6186,11 @@ button, .button {
 
 .box {
   border-radius: 1rem;
-  padding: 1rem;
+  padding: 2rem;
   border: 1px solid #999999;
   height: 100%;
   position: relative;
   overflow: hidden; }
-  @media screen and (min-width: 1024px) {
-    .box {
-      padding: 2rem; } }
   .box::before {
     content: "";
     position: absolute;
@@ -6224,6 +6235,8 @@ button, .button {
     flex-direction: column;
     text-align: center;
     color: #2D3632; }
+    .box-map .box-copy h3 {
+      margin-bottom: 1rem; }
     @media screen and (min-width: 769px), print {
       .box-map .box-copy {
         text-align: left;
@@ -6238,6 +6251,12 @@ button, .button {
           margin-top: auto; } }
   .box-map .map-container {
     flex: 1; }
+    .box-map .map-container .google-map {
+      width: 100%;
+      height: 300px; }
+      @media screen and (min-width: 769px), print {
+        .box-map .map-container .google-map {
+          height: 450px; } }
 
 :root {
   accent-color: #FEFF00; }
@@ -6246,8 +6265,7 @@ button, .button {
   outline: none; }
 
 .control input, .control textarea {
-  box-shadow: none;
-  padding: 1.5rem; }
+  box-shadow: none; }
   .control input:hover, .control input:focus, .control input:active, .control textarea:hover, .control textarea:focus, .control textarea:active {
     border-color: #FEFF00;
     -webkit-box-shadow: 0px 0px 22px -4px rgba(45, 54, 50, 0.25);

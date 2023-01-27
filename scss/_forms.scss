@@ -9,7 +9,6 @@ outline: none;
 .control{
     input,textarea{
         box-shadow: none;
-        padding: 1.5rem;
         &:hover, &:focus, &:active{
             border-color: $primary;
             @include box-shadow;

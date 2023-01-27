@@ -16,25 +16,25 @@
 
 
 //Reveal
-function reveal() {
-  var reveals = document.querySelectorAll(".reveal");
+// function reveal() {
+//   var reveals = document.querySelectorAll(".reveal");
 
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 20;
+//   for (var i = 0; i < reveals.length; i++) {
+//     var windowHeight = window.innerHeight;
+//     var elementTop = reveals[i].getBoundingClientRect().top;
+//     var elementVisible = 20;
 
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("active");
-    } else {
-      reveals[i].classList.remove("active");
-    }
-  }
-}
+//     if (elementTop < windowHeight - elementVisible) {
+//       reveals[i].classList.add("active");
+//     } else {
+//       reveals[i].classList.remove("active");
+//     }
+//   }
+// }
 
-window.addEventListener("scroll", reveal);
+// window.addEventListener("scroll", reveal);
 
-reveal();
+// reveal();
 
 
 /* Sticky anchors */
@@ -50,10 +50,3 @@ var myScrollFunc = function() {
 };
 
 window.addEventListener("scroll", myScrollFunc);
-
-
-/* Add a class to accordion 
-function accordionContent() {
-  var menuItems = document.getElementsByClassName(".accordion");
-  menuItems.classList.toggle("is-active");
-}*/
