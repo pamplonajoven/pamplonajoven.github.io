@@ -10,6 +10,7 @@ section.section{
 	@include widescreen{
 		padding-bottom: 3rem;
 	}
+
 	&.section-hero{
 		background-color: $white;
 		border-top-left-radius: 0;
@@ -29,6 +30,7 @@ section.section{
 	}
 	&.section-secondary{
 		background-color: $secondary;
+	
 	}
 	&.section-banner{
 		background-color: $dark;

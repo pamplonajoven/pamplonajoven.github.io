@@ -203,6 +203,16 @@
     }
 }
 
+//Logo sticky
+
+.logo-sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+
 //Anchors sticky when scrolling
 .anchors-top{
     position: fixed;
@@ -210,7 +220,7 @@
     background-color: $white;
     width: 100%;
     left: 0;
-    z-index: 9999;
+    z-index: 9;
     justify-content: center;
     padding: 1rem;
     @include box-shadow;
