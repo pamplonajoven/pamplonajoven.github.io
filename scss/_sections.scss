@@ -10,26 +10,16 @@ section.section{
 	@include widescreen{
 		padding-bottom: 3rem;
 	}
-
 	&.section-hero{
 		background-color: $white;
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 0;
 		border-top-left-radius: 0;
 		border-top-right-radius: 0;
-		padding: 0;
-		border-bottom-right-radius: 1rem;
-		border-bottom-left-radius: 1rem;
-		@include tablet{
-			@include radius-lg;
-			border-top-left-radius: 0;
-			border-top-right-radius: 0;
-			padding: 1rem 2rem 2rem;
-		}
-		@include widescreen{
-			padding-bottom: 2rem;
-		}
 	}
 	&.section-secondary{
-		background-color: $secondary;
+		background-color: $gray-bg;
 	
 	}
 	&.section-banner{
@@ -64,8 +54,21 @@ section.section{
 		h2, .lead{
 			color: $white;
 		}
-		
-
+	}
+	&.section-image{
+		padding: 0;
+		overflow: hidden;
+		line-height: 0;
+		z-index: 0;
+		img{
+			aspect-ratio: 16 / 6;
+			object-fit: cover;
+			min-width: 100%;
+			@include radius;
+			@include tablet{
+				@include radius-lg
+			}
+		}
 	}
 }
 

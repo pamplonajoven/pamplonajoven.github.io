@@ -14,9 +14,6 @@
             padding-top: .3rem;
             padding-bottom: .3rem;
             font-weight: $semi-bold;
-            @include desktop{
-                font-size: 18px;
-            }
             &:hover, &:active, &.is-active{
                 background-color: $primary;
                 border-color: $dark;

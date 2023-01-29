@@ -48,7 +48,6 @@
 body{
 	font-family: $family-sans-serif;
 	color: $dark;
-    background-color: $gray-bg;
 	@include fs-regular;
 	line-height: 1.2;
 }

@@ -3,6 +3,10 @@ html {
 	overflow-x: hidden;
 }
 
+body{
+	background-color: $dark;
+}
+
 main.main{
 	position: relative;
 	z-index: 3;
@@ -60,7 +64,7 @@ header.hero{
 	width: 100%;
 	display: flex;
 	align-items: center;
-    padding: 1rem 5%;
+    padding: 1rem 2rem;
 	justify-content: center;
 	z-index: 2;
 	@include desktop{
@@ -70,7 +74,17 @@ header.hero{
 
 //footer
 footer.footer{
+	background-color: $gray-bg;
 	padding: 3rem 1rem;
+	position: relative;
+	@include radius;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	@include tablet{
+		@include radius-lg;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+	}
 	@include desktop{
 		padding: 3rem 0;
 	}

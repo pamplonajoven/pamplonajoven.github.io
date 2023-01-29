@@ -5620,7 +5620,6 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 body {
   font-family: "Inter", sans-serif;
   color: #2D3632;
-  background-color: #f0f0f0;
   font-size: clamp(15px, 1vw, 16px);
   line-height: 1.2; }
 
@@ -5762,6 +5761,9 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden; }
 
+body {
+  background-color: #2D3632; }
+
 main.main {
   position: relative;
   z-index: 3; }
@@ -5811,7 +5813,7 @@ header.hero {
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 1rem 5%;
+  padding: 1rem 2rem;
   justify-content: center;
   z-index: 2; }
   @media screen and (min-width: 1024px) {
@@ -5819,7 +5821,17 @@ header.hero {
       justify-content: space-between; } }
 
 footer.footer {
-  padding: 3rem 1rem; }
+  background-color: #f0f0f0;
+  padding: 3rem 1rem;
+  position: relative;
+  border-radius: 1rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0; }
+  @media screen and (min-width: 769px), print {
+    footer.footer {
+      border-radius: 3rem;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0; } }
   @media screen and (min-width: 1024px) {
     footer.footer {
       padding: 3rem 0; } }
@@ -5873,22 +5885,13 @@ section.section {
       padding-bottom: 3rem; } }
   section.section.section-hero {
     background-color: #ffffff;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
     border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    padding: 0;
-    border-bottom-right-radius: 1rem;
-    border-bottom-left-radius: 1rem; }
-    @media screen and (min-width: 769px), print {
-      section.section.section-hero {
-        border-radius: 3rem;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-        padding: 1rem 2rem 2rem; } }
-    @media screen and (min-width: 1216px) {
-      section.section.section-hero {
-        padding-bottom: 2rem; } }
+    border-top-right-radius: 0; }
   section.section.section-secondary {
-    background-color: #00CD5F; }
+    background-color: #f0f0f0; }
   section.section.section-banner {
     background-color: #2D3632;
     min-height: 400px;
@@ -5919,6 +5922,19 @@ section.section {
         background-size: contain; } }
     section.section.section-contact h2, section.section.section-contact .lead {
       color: #ffffff; }
+  section.section.section-image {
+    padding: 0;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 0; }
+    section.section.section-image img {
+      aspect-ratio: 16 / 6;
+      object-fit: cover;
+      min-width: 100%;
+      border-radius: 1rem; }
+      @media screen and (min-width: 769px), print {
+        section.section.section-image img {
+          border-radius: 3rem; } }
 
 .radius-top {
   border-bottom-left-radius: 0;
@@ -5944,9 +5960,6 @@ section.section {
       padding-top: .3rem;
       padding-bottom: .3rem;
       font-weight: 600; }
-      @media screen and (min-width: 1024px) {
-        .navbar.navbar-custom .navbar-menu a.navbar-item, .navbar.navbar-custom .navbar-menu a.navbar-link {
-          font-size: 18px; } }
       .navbar.navbar-custom .navbar-menu a.navbar-item:hover, .navbar.navbar-custom .navbar-menu a.navbar-item:active, .navbar.navbar-custom .navbar-menu a.navbar-item.is-active, .navbar.navbar-custom .navbar-menu a.navbar-link:hover, .navbar.navbar-custom .navbar-menu a.navbar-link:active, .navbar.navbar-custom .navbar-menu a.navbar-link.is-active {
         background-color: #FEFF00;
         border-color: #2D3632; }
@@ -6132,7 +6145,8 @@ section.section {
   transition: all 0.3s ease;
   margin-bottom: .5rem;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  border: 1px solid #DDDDDD; }
   @media screen and (min-width: 769px), print {
     .accordions .accordion {
       padding: 1.5rem; } }
@@ -6167,10 +6181,11 @@ section.section {
           object-fit: cover;
           width: 40%; } }
   .accordions .accordion:hover, .accordions .accordion:active {
-    background-color: #ffffff;
+    background-color: #FEFF00;
     -webkit-box-shadow: 0px 0px 22px -4px rgba(45, 54, 50, 0.25);
     -moz-box-shadow: 0px 0px 22px -4px rgba(45, 54, 50, 0.25);
-    box-shadow: 0px 0px 22px -4px rgba(45, 54, 50, 0.25); }
+    box-shadow: 0px 0px 22px -4px rgba(45, 54, 50, 0.25);
+    border-color: #2D3632; }
   .accordions .accordion.is-active {
     background-color: #ffffff;
     -webkit-box-shadow: 0px 0px 22px -4px rgba(45, 54, 50, 0.25);
@@ -6180,6 +6195,8 @@ section.section {
       background-color: #ffffff; }
     .accordions .accordion.is-active .accordion-content {
       display: block; }
+    .accordions .accordion.is-active:hover, .accordions .accordion.is-active:active {
+      border-color: #DDDDDD; }
 
 .banner-info {
   background-image: url("../images/banner-info-sm.jpg");
