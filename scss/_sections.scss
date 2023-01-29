@@ -14,7 +14,13 @@ section.section{
 		background-color: $white;
 		border-top-left-radius: 0;
 		border-top-right-radius: 0;
+		padding: 0;
+		border-bottom-right-radius: 1rem;
+		border-bottom-left-radius: 1rem;
 		@include tablet{
+			@include radius-lg;
+			border-top-left-radius: 0;
+			border-top-right-radius: 0;
 			padding: 1rem 2rem 2rem;
 		}
 		@include widescreen{
@@ -42,7 +48,7 @@ section.section{
 		background-image: url("../images/casa-contacto.jpg");
 		background-repeat: no-repeat;
 		background-position: top center;
-		background-size: contain;
+		background-size: 140%;
 		background-blend-mode: multiply;
 		align-items: center;
 		border-top-left-radius: 0;
@@ -50,6 +56,9 @@ section.section{
 		margin-top: -3rem;
 		padding-top: 6rem;
 		z-index: 0;
+		@include tablet{
+			background-size: contain;
+		}
 		h2, .lead{
 			color: $white;
 		}

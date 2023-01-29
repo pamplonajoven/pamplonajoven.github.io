@@ -28,6 +28,7 @@ $semi-bold:600;
 $bold:700;
 $radius-lg:3rem;
 $radius:1rem;
+$radius-child:.5rem;
 
 
 
@@ -37,9 +38,16 @@ $radius:1rem;
 @mixin radius{
     border-radius: $radius;
 }
+@mixin radius-child{
+    border-radius: $radius-child;
+}
 @mixin radius-top{
     border-radius-top-left: $radius;
     border-radius-top-right: $radius;
+}
+@mixin radius-bottom{
+    border-radius-bottom-left: $radius;
+    border-radius-bottom-right: $radius;
 }
 @mixin radius-lg{
     border-radius: $radius-lg;
@@ -76,7 +84,7 @@ $radius:1rem;
 @import "../node_modules/bulma/sass/helpers/_all.sass";
 @import "../node_modules/bulma/sass/form/_all";
 @import "../node_modules/bulma/sass/elements/button.sass";
-// @import "../node_modules/bulma/sass/components/tabs.sass";
+@import "../node_modules/bulma/sass/components/tabs.sass";
 // @import "../node_modules/bulma/sass/components/pagination.sass";
 
 

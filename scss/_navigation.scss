@@ -31,6 +31,15 @@
                 padding-bottom: .6rem;
                 padding-left: 1rem;
                 margin-bottom: .5rem;
+                &.is-search{
+                    display: flex;
+                    align-items: center;
+                    gap: .5rem;
+                }
+            }
+            .language{
+                margin: 1.5rem 0;
+                text-align: center;
             }
             .navbar-dropdown{
                 margin-bottom: .5rem;
@@ -242,4 +251,10 @@
     display: block;
     padding-top: 3rem;
     margin-top: -3rem;
+}
+
+//Tabs
+.tabs.is-toggle li.is-active a{
+    background-color: $dark;
+    border-color: $dark;
 }

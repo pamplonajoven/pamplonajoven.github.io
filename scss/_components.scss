@@ -2,11 +2,14 @@
     .accordion{
         background-color: rgba($white, .7);
         @include radius;
-        padding: 1.5rem;
+        padding: 1rem;
         @include transition;
         margin-bottom: .5rem;
         position: relative;
         overflow: hidden;
+        @include tablet{
+            padding: 1.5rem;
+        }
         .accordion-header{
             display: flex;
             align-items: center;
@@ -27,8 +30,9 @@
             display: none;
             min-height: 12rem;
             img{
-                @include radius;
+                @include radius-child;
                 @include desktop{
+                    @include radius;
                     position: absolute;
                     height: 105%;
                     top: 0;
