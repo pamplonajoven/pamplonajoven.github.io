@@ -5928,13 +5928,14 @@ section.section {
     line-height: 0;
     z-index: 0; }
     section.section.section-image img {
-      aspect-ratio: 16 / 6;
+      aspect-ratio: 16 / 9;
       object-fit: cover;
       min-width: 100%;
       border-radius: 1rem; }
       @media screen and (min-width: 769px), print {
         section.section.section-image img {
-          border-radius: 3rem; } }
+          border-radius: 3rem;
+          aspect-ratio: 16 / 6; } }
 
 .radius-top {
   border-bottom-left-radius: 0;

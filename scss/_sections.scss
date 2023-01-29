@@ -61,12 +61,13 @@ section.section{
 		line-height: 0;
 		z-index: 0;
 		img{
-			aspect-ratio: 16 / 6;
+			aspect-ratio: 16 / 9;
 			object-fit: cover;
 			min-width: 100%;
 			@include radius;
 			@include tablet{
-				@include radius-lg
+				@include radius-lg;
+				aspect-ratio: 16 / 6;
 			}
 		}
 	}
