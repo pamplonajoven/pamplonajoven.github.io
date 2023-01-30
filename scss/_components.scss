@@ -1,6 +1,6 @@
 .accordions{
     .accordion{
-        background-color: rgba($white, .7);
+        background-color: $gray-bg;
         @include radius;
         padding: 1rem;
         @include transition;

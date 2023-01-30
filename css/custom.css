@@ -6149,7 +6149,7 @@ section.section {
   border-color: #2D3632; }
 
 .accordions .accordion {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: #f0f0f0;
   border-radius: 1rem;
   padding: 1rem;
   transition: all 0.3s ease;
