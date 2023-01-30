@@ -6093,15 +6093,12 @@ section.section {
     .anchors ul li.is-active a {
       color: #FEFF00; }
 
-.logo-sticky {
-  position: fixed;
-  top: 0;
-  left: 0; }
-
 .anchors-top {
   position: fixed;
   top: 0;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   width: 100%;
   left: 0;
   z-index: 9;
@@ -6110,20 +6107,32 @@ section.section {
   -webkit-box-shadow: 0px 0px 22px -4px rgba(45, 54, 50, 0.25);
   -moz-box-shadow: 0px 0px 22px -4px rgba(45, 54, 50, 0.25);
   box-shadow: 0px 0px 22px -4px rgba(45, 54, 50, 0.25);
-  display: none;
-  font-size: 18px; }
+  display: none; }
   @media screen and (min-width: 1024px) {
     .anchors-top.show {
-      display: block; } }
+      display: block;
+      animation: fadeIn ease 1s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
   .anchors-top.hide {
     display: none; }
+  .anchors-top .logo-sticky {
+    position: absolute; }
+    .anchors-top .logo-sticky img {
+      width: 90px; }
   .anchors-top ul {
     display: flex;
     flex-direction: row;
     gap: 1rem;
     justify-content: center; }
     .anchors-top ul li a {
-      color: #999999;
+      color: #666666;
       font-weight: 600; }
       .anchors-top ul li a:hover {
         color: #2D3632; }
@@ -6147,7 +6156,7 @@ section.section {
   margin-bottom: .5rem;
   position: relative;
   overflow: hidden;
-  border: 1px solid #DDDDDD; }
+  border: 1px solid #999999; }
   @media screen and (min-width: 769px), print {
     .accordions .accordion {
       padding: 1.5rem; } }
@@ -6191,13 +6200,14 @@ section.section {
     background-color: #ffffff;
     -webkit-box-shadow: 0px 0px 22px -4px rgba(45, 54, 50, 0.25);
     -moz-box-shadow: 0px 0px 22px -4px rgba(45, 54, 50, 0.25);
-    box-shadow: 0px 0px 22px -4px rgba(45, 54, 50, 0.25); }
+    box-shadow: 0px 0px 22px -4px rgba(45, 54, 50, 0.25);
+    border-color: #2D3632; }
     .accordions .accordion.is-active .icon {
       background-color: #ffffff; }
     .accordions .accordion.is-active .accordion-content {
       display: block; }
     .accordions .accordion.is-active:hover, .accordions .accordion.is-active:active {
-      border-color: #DDDDDD; }
+      border-color: #2D3632; }
 
 .banner-info {
   background-image: url("../images/banner-info-sm.jpg");
@@ -6274,7 +6284,7 @@ section.section {
     box-shadow: 0px 0px 22px -4px rgba(45, 54, 50, 0.25); }
 
 button, .button {
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
   border-radius: 100px;
   font-size: clamp(15px, 1vw, 16px);

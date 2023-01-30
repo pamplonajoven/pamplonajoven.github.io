@@ -7,7 +7,7 @@
         margin-bottom: .5rem;
         position: relative;
         overflow: hidden;
-        border: 1px solid $gray-light;
+        border: 1px solid $gray;
         @include tablet{
             padding: 1.5rem;
         }
@@ -55,6 +55,7 @@
         &.is-active{
             background-color: $white;
             @include box-shadow;
+            border-color: $dark;
             .icon{
                 background-color: $white;
             }
@@ -62,7 +63,7 @@
                 display: block;
             }
             &:hover, &:active{
-                border-color: $gray-light;
+                border-color: $dark;
             }
         }
     }
