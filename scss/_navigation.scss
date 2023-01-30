@@ -204,17 +204,18 @@
 //Anchors sticky when scrolling
 .anchors-top{
     position: fixed;
-    top: 0;
+    top: 1%;
     background-color: rgba($white,.7);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    width: 100%;
-    left: 0;
+    width: 98%;
+    left: 1%;
     z-index: 9;
     justify-content: center;
     padding: 1rem;
     @include box-shadow;
     display: none;
+    @include radius;
     &.show{
         @include desktop{
             display: block;
@@ -236,8 +237,9 @@
     }
     .logo-sticky{
         position: absolute;
+        top: -8px;
         img{
-            width: 90px;
+            width: 110px;
         }
     }
     ul{
