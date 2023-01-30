@@ -5790,7 +5790,7 @@ header.hero {
         min-height: none; } }
     @media screen and (min-width: 1024px) {
       header.hero .hero-image img {
-        aspect-ratio: 22 / 9; } }
+        aspect-ratio: 26 / 9; } }
   header.hero .hero-copy {
     position: absolute;
     top: 4rem;
