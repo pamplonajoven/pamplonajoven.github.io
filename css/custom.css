@@ -5773,10 +5773,11 @@ h4 {
   margin-bottom: .2rem; }
 
 h2.has-bg.reveal:before {
+  transition: 2s all ease-in-out;
   width: 0; }
 
 h2.has-bg.reveal.active::before {
-  width: 250px; }
+  width: 30%; }
 
 .bg-gradient.reveal::before {
   transition: 3s all ease-in;
@@ -5797,6 +5798,29 @@ h2.has-bg.reveal.active::before {
     opacity: 0; }
   100% {
     opacity: 1; } }
+
+.skew {
+  transform: skew(0deg); }
+
+progress {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 80%;
+  height: 3px;
+  border: none;
+  background: #ffffff;
+  margin: 0 auto; }
+
+progress::-webkit-progress-bar {
+  background: transparent; }
+
+progress::-webkit-progress-value {
+  background: linear-gradient(to left, #00CD5F, #FEFF00);
+  background-attachment: fixed; }
+
+progress::-moz-progress-bar {
+  background: linear-gradient(to left, #00CD5F, #FEFF00);
+  background-attachment: fixed; }
 
 html {
   scroll-behavior: smooth;
@@ -5971,6 +5995,7 @@ section.section {
       aspect-ratio: 16 / 9;
       object-fit: cover;
       min-width: 100%;
+      margin: -2.5rem 0;
       border-radius: 1rem; }
       @media screen and (min-width: 769px), print {
         section.section.section-image img {
@@ -6143,7 +6168,7 @@ section.section {
   left: 1%;
   z-index: 9;
   justify-content: center;
-  padding: 1.5rem;
+  padding: 1rem 1.5rem 0 1.5rem;
   -webkit-box-shadow: 0px 0px 22px -4px rgba(45, 54, 50, 0.25);
   -moz-box-shadow: 0px 0px 22px -4px rgba(45, 54, 50, 0.25);
   box-shadow: 0px 0px 22px -4px rgba(45, 54, 50, 0.25);
