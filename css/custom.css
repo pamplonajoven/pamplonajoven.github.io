@@ -5745,6 +5745,8 @@ h4 {
     font-size: 26px;
     color: #00CD5F;
     margin-right: .3rem; }
+  .list-checks li:last-child {
+    margin-bottom: 0; }
 
 .list-bullets {
   padding-left: 1rem; }
@@ -5752,6 +5754,8 @@ h4 {
     list-style: disc;
     margin-bottom: .5rem;
     line-height: 1.3; }
+    .list-bullets li:last-child {
+      margin-bottom: 0; }
 
 .list-rrss {
   display: flex;
@@ -6497,7 +6501,10 @@ button, .button {
   overflow: hidden;
   background-color: rgba(255, 255, 255, 0.6); }
   .box .box-content {
-    padding: 0 1rem 1rem 1rem; }
+    padding: 0 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%; }
   .box h3 {
     border-radius: 0.5rem;
     background-color: #2D3632;
@@ -6506,9 +6513,13 @@ button, .button {
   .box h4 {
     margin-top: 1.5rem; }
   .box ul, .box p {
-    margin-top: .5rem; }
+    margin-top: .5rem;
+    margin-bottom: 0; }
   .box.is-winter h3 {
     background-color: #1CA5D6; }
+  @media screen and (min-width: 1024px) {
+    .box.is-winter {
+      margin-right: -1px; } }
   .box.is-summer h3 {
     background-color: #F2E25F;
     color: #2D3632; }
