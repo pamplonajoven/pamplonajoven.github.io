@@ -83,19 +83,22 @@ header.hero{
 
 //footer
 footer.footer{
-	background-color: $gray-bg;
-	padding: 3rem 1rem;
-	position: relative;
-	@include radius;
-	border-bottom-left-radius: 0;
-	border-bottom-right-radius: 0;
-	@include tablet{
-		@include radius-lg;
+	background-color: $dark;
+	.footer-wrapper{
+		background-color: $gray-bg;
+		padding: 3rem 1rem;
+		position: relative;
+		@include radius;
 		border-bottom-left-radius: 0;
 		border-bottom-right-radius: 0;
-	}
-	@include desktop{
-		padding: 3rem 0;
+		@include tablet{
+			@include radius-lg;
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+		@include desktop{
+			padding: 3rem 0;
+		}
 	}
 	a{
 		color:$black;

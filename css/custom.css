@@ -5894,20 +5894,22 @@ header.hero {
       justify-content: space-between; } }
 
 footer.footer {
-  background-color: #f0f0f0;
-  padding: 3rem 1rem;
-  position: relative;
-  border-radius: 1rem;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0; }
-  @media screen and (min-width: 769px), print {
-    footer.footer {
-      border-radius: 3rem;
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0; } }
-  @media screen and (min-width: 1024px) {
-    footer.footer {
-      padding: 3rem 0; } }
+  background-color: #2D3632; }
+  footer.footer .footer-wrapper {
+    background-color: #f0f0f0;
+    padding: 3rem 1rem;
+    position: relative;
+    border-radius: 1rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0; }
+    @media screen and (min-width: 769px), print {
+      footer.footer .footer-wrapper {
+        border-radius: 3rem;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0; } }
+    @media screen and (min-width: 1024px) {
+      footer.footer .footer-wrapper {
+        padding: 3rem 0; } }
   footer.footer a {
     color: #000000; }
     footer.footer a:hover, footer.footer a:active {
@@ -6244,7 +6246,7 @@ section.section {
   border-color: #2D3632; }
 
 .accordions .accordion {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(240, 240, 240, 0.5);
   border-radius: 1rem;
   padding: 1rem;
   transition: all 0.3s ease;
@@ -6255,6 +6257,9 @@ section.section {
   @media screen and (min-width: 769px), print {
     .accordions .accordion {
       padding: 1.5rem; } }
+  @media screen and (min-width: 1024px) {
+    .accordions .accordion {
+      margin-bottom: -1px; } }
   .accordions .accordion .accordion-header {
     display: flex;
     align-items: center;
@@ -6436,6 +6441,9 @@ button, .button {
   @media screen and (min-width: 769px), print {
     .evento {
       padding: 1.5rem 1.5rem 1rem 1.5rem; } }
+  @media screen and (min-width: 1024px) {
+    .evento {
+      margin-right: -1px; } }
   .evento .card-wrapper {
     display: flex;
     flex-direction: column; }

@@ -1,6 +1,6 @@
 .accordions{
     .accordion{
-        background-color: rgba($white, .6);
+        background-color: rgba($gray-bg, .5);
         @include radius;
         padding: 1rem;
         @include transition;
@@ -10,6 +10,9 @@
         border: 1px solid $gray;
         @include tablet{
             padding: 1.5rem;
+        }
+        @include desktop{
+            margin-bottom: -1px;
         }
         .accordion-header{
             display: flex;
