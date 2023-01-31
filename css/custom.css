@@ -6010,6 +6010,8 @@ section.section {
         section.section.section-image img {
           border-radius: 3rem;
           aspect-ratio: 16 / 6; } }
+  section.section.post-banner {
+    margin-top: -6rem; }
 
 .radius-top {
   border-bottom-left-radius: 0;
@@ -6226,8 +6228,8 @@ section.section {
 
 .is-anchored {
   display: block;
-  padding-top: 9rem;
-  margin-top: -9rem; }
+  padding-top: 7rem;
+  margin-top: -7rem; }
 
 .tabs.is-toggle li.is-active a {
   background-color: #2D3632;
