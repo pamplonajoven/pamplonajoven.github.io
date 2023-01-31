@@ -75,6 +75,7 @@ gsap.set(".skew", {transformOrigin: "right center", force3D: true});
 
 
 
+
 //progress
 gsap.registerPlugin(ScrollTrigger);
 gsap.to('progress', {
