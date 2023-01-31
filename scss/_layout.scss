@@ -5,6 +5,14 @@ html {
 
 body{
 	background-color: $dark;
+	&.no-scroll{
+		overflow: hidden;
+		height: 100vh;
+		padding-right: 15px;
+		@include desktop{
+			padding-right: 0;
+		}
+	}
 }
 
 main.main{

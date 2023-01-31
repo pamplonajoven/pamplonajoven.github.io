@@ -55,7 +55,7 @@
           </li>
         </ul>
     </nav>
-    <nav class="navbar navbar-custom" role="navigation" aria-label="main navigation">
+    <nav class="navbar navbar-custom" role="navigation" aria-label="main navigation" id="navbar">
         <div class="navbar-brand">
           <a class="navbar-item is-logo" href="index.html" title="Ir a la página de inicio">
             <img src="images/logo-es.svg" alt="Pamplona Joven">
@@ -74,22 +74,22 @@
                 </a>
                 <div class="navbar-dropdown">
                   <a class="navbar-item dropdown-item" title="Ir al programa de Información">
-                    <span>1</span>Información
+                    Información
                   </a>
                   <a class="navbar-item dropdown-item" title="Ir al programa de Asesoramiento">
-                    <span>2</span>Asesoramiento
+                    Asesoramiento
                   </a>
                   <a class="navbar-item dropdown-item" title="Ir al programa de Cultura">
-                    <span>3</span>Cultura
+                    Cultura
                   </a>
                   <a class="navbar-item dropdown-item" title="Ir al programa de Subvenciones">
-                    <span>4</span>Subvenciones
+                    Subvenciones
                   </a>
                   <a class="navbar-item dropdown-item" title="Ir al programa de Participación">
-                    <span>5</span>Participación
+                    Participación
                   </a>
                   <a class="navbar-item dropdown-item" title="Ir al programa de Ocio y tiempo libre">
-                    <span>6</span>Ocio y tiempo libre
+                   Ocio y tiempo libre
                   </a>
                 </div><!-- navbar-dropdown -->
               </div><!-- navbar-item has-dropdown -->
@@ -123,35 +123,32 @@
           </div><!-- navbar-end -->
         </div><!-- navbar-menu -->
     </nav>
-    <div id="anchors" class="anchors-top">
-      <!-- los repetimos en el banner -->
-      <div class="container">
-        <a class="logo-sticky" href="#top" title="Ir a la parte superior">
-          <img src="images/logo-es.svg" alt="Pamplona Joven">
-        </a>
-        <ul>
-          <li class="is-active">
-            <a href="#tucasa">Tu casa... para todo</a>
-          </li>
-          <li>
-            <a href="#agenda">Agenda</a>
-          </li>
-          <li>
-            <a href="#espacios">Espacios</a>
-          </li>
-          <li>
-            <a href="#calendario">Calendario y horarios</a>
-          </li>
-          <li>
-            <a href="#contacto">Contacto</a>
-          </li>
-        </ul>
-       <div class="has-text-centered">
-        <progress max="100" value="0"></progress>
-       </div>
-      </div>
-    </div>
     <main class="main">
+      <div id="anchors" class="anchors-top">
+        <!-- los repetimos en el banner -->
+        <div class="container">
+          <ul>
+            <li class="is-active">
+              <a href="#tucasa">Tu casa... para todo</a>
+            </li>
+            <li>
+              <a href="#agenda">Agenda</a>
+            </li>
+            <li>
+              <a href="#espacios">Espacios</a>
+            </li>
+            <li>
+              <a href="#calendario">Calendario y horarios</a>
+            </li>
+            <li>
+              <a href="#contacto">Contacto</a>
+            </li>
+          </ul>
+         <div class="has-text-centered">
+          <progress max="100" value="0"></progress>
+         </div>
+        </div>
+      </div>
       <section class="section section-hero">
           <header class="hero is-casa fade-in">
             <div class="hero-nav">
@@ -328,7 +325,7 @@
           </div>
       </section>
       <span class="is-anchored" id="agenda"></span>
-      <section class="section is-secondary reveal">
+      <section class="section section-secondary reveal">
         <div class="container" data-aos="fade-up" data-aos-offset="10">
           <h2 class="has-bg reveal skew">Próximos eventos</h2>
           <div class="columns is-multiline">

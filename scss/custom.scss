@@ -43,12 +43,12 @@ $radius-child:.5rem;
     border-radius: $radius-child;
 }
 @mixin radius-top{
-    border-radius-top-left: $radius;
-    border-radius-top-right: $radius;
+    border-top-left-radius: $radius;
+    border-top-right-radius: $radius;
 }
 @mixin radius-bottom{
-    border-radius-bottom-left: $radius;
-    border-radius-bottom-right: $radius;
+    border-bottom-left-radius: $radius;
+    border-bottom-right-radius: $radius;
 }
 @mixin radius-lg{
     border-radius: $radius-lg;
