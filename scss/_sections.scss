@@ -34,6 +34,9 @@ section.section{
 		padding-bottom: 9rem;
 		z-index: 0;
 	}
+	&.section.is-secondary{
+		background-color: $secondary;
+	}
 	&.section-contact{
 		background-color: $dark;
 		background-image: url("../images/casa-contacto.jpg");

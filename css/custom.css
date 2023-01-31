@@ -5968,6 +5968,8 @@ section.section {
     margin-bottom: -6rem;
     padding-bottom: 9rem;
     z-index: 0; }
+  section.section.section.is-secondary {
+    background-color: #00CD5F; }
   section.section.section-contact {
     background-color: #2D3632;
     background-image: url("../images/casa-contacto.jpg");
@@ -6400,7 +6402,7 @@ button, .button {
   border-radius: 1rem;
   padding: 1rem;
   border: 1px solid #999999;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.9);
   position: relative;
   display: flex;
   color: #2D3632;
