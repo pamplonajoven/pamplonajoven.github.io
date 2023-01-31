@@ -55,7 +55,7 @@ window.addEventListener("scroll", myScrollFunc);
 gsap.registerPlugin(ScrollTrigger);
 let proxy = { skew: 0 },
     skewSetter = gsap.quickSetter(".skew", "skewY", "deg"), // fast
-    clamp = gsap.utils.clamp(-10, 10); // don't let the skew go beyond 20 degrees. 
+    clamp = gsap.utils.clamp(-2, 2); // don't let the skew go beyond 20 degrees. 
 
 ScrollTrigger.create({
   onUpdate: (self) => {
@@ -73,18 +73,6 @@ gsap.set(".skew", {transformOrigin: "right center", force3D: true});
 
 
 
-// horizontal text
-gsap.to(".hor-text", {
-  scrollTrigger: {
-    trigger: ".section",
-    start: "top bottom",
-    end: "bottom top",
-    toggleActions: "restart none none none",
-  },
-  x: 500,
-  duration: 2,
-  ease: "power2.inOut",
-});
 
 
 //progress
