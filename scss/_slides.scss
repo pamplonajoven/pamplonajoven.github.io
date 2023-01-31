@@ -1,0 +1,43 @@
+
+.splide__slide{
+	position: relative;
+	background-color: $black;
+	border-radius: 1rem;
+	@include tablet{
+		@include radius-lg;
+	}
+	.slide-image{
+		img{
+			aspect-ratio: 4 / 3;
+			object-fit: cover;
+			min-width: 100%;
+			border-radius: 1rem;
+			min-height: 350px;
+			line-height: 0;
+			@include tablet{
+				aspect-ratio: 16 / 9;
+				@include radius-lg;
+				min-height: none;
+			}
+			display: block;
+			opacity: .4;
+			@include desktop{
+				aspect-ratio: 26 / 9;
+			}
+		}
+	}
+	.slide-copy{
+		position: absolute;
+		top: 3rem;
+		left: 3rem;
+		z-index: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 0 1rem;
+		h1{
+			line-height: 1.1;
+			color: $white;
+		}
+	}
+}

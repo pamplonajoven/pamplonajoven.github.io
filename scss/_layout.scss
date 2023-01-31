@@ -150,3 +150,14 @@ footer.footer{
 .mt-2{
 	margin-top: 2rem !important;
 }
+
+// Columns
+
+.columns.is-0-desktop{
+	.column{
+		@include desktop{
+			padding: 0;
+			margin-bottom:-1px;
+		}
+	}
+}

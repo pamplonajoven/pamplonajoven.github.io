@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pamplona Joven • Área de Juventud del Ayuntamiento de Pamplona</title>
 
-
     <link rel="apple-touch-icon" sizes="57x57" href="images/icon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="images/icon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/icon/apple-icon-72x72.png">
@@ -23,6 +22,9 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="images/icon/ms-icon-144x144.png">
 
+
+    <!-- splide -->
+    <link rel="stylesheet" href="css/splide.min.css">
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Pamplona Joven css -->
@@ -121,190 +123,114 @@
         </div><!-- navbar-menu -->
     </nav>
     <main class="main">
-      <div id="anchors" class="anchors-top">
-        <!-- los repetimos en el banner -->
-        <div class="container">
-          <ul>
-            <li class="is-active">
-              <a href="#tucasa">Tu casa... para todo</a>
-            </li>
-            <li>
-              <a href="#agenda">Próximos eventos</a>
-            </li>
-            <li>
-              <a href="#espacios">Espacios</a>
-            </li>
-            <li>
-              <a href="#calendario">Calendario y horarios</a>
-            </li>
-            <li>
-              <a href="#contacto">Ven a la Casa</a>
-            </li>
-          </ul>
-         <div class="has-text-centered">
-          <progress max="100" value="0"></progress>
-         </div>
+    <section class="section section-hero splide" aria-label="Destacados de Pamplona Joven">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <div class="slide-copy">
+                        <h1>Casa de la Juventud</h1>
+                        <p>Breve explicación</p>
+                        <a class="button is-primary">Saber más</a>
+                      </div><!-- slide-copy -->
+                      <picture class="slide-image">
+                        <img src="images/baile.jpg" alt="Casa de la Juventud de Pamplona">
+                      </picture>
+                </li>
+            </ul>
         </div>
-      </div>
-      <section class="section section-hero">
-          <header class="hero is-casa fade-in">
-            <div class="hero-nav">
-              <div class="breadcrumbs">
-                <ul>
-                  <li>
-                    <a>Inicio</a>
-                  </li>
-                  <li>
-                    Casa de la Juventud
-                  </li>
-                </ul>
-              </div><!-- breadcrumbs -->
-              <div class="anchors">
-                <ul>
-                  <li class="is-active">
-                    <a href="#tucasa">Tu casa... para todo</a>
-                  </li>
-                  <li>
-                    <a href="#agenda">Próximos eventos</a>
-                  </li>
-                  <li>
-                    <a href="#espacios">Espacios</a>
-                  </li>
-                  <li>
-                    <a href="#calendario">Calendario y horarios</a>
-                  </li>
-                  <li>
-                    <a href="#contacto">Ven a la Casa</a>
-                  </li>
-                </ul>
-              </div><!-- anchors -->
-            </div><!-- hero-nav -->
-            <div class="hero-copy">
-              <h1>Casa de la Juventud</h1>
-            </div><!-- hero-copy -->
-            <picture class="hero-image">
-              <img src="images/baile.jpg" alt="Casa de la Juventud de Pamplona">
-            </picture>
-          </header>
-      </section>
+    </section>
       <span class="is-anchored" id="tucasa"></span>
       <section class="section reveal" data-aos="fade-up" data-aos-offset="20">
         <div class="container">
-          <h2 class="has-bg reveal skew">Tu Casa... para todo</h2>
-          <div class="columns is-centered">
-            <div class="column is-8-desktop">
-              <div class="accordions">
-                <div class="accordion">
-                  <a class="accordion-header">
-                    <h3>Tu Casa para... informarte</h3>
-                    <div class="accordion-icon">
-                      <span class="material-symbols-outlined icon">
-                        add_circle
-                        </span>
+          <h2 class="has-bg reveal skew">Eres joven.<br>Eres importante.<br>Tenemos MUCHO para ti</h2>
+          <div class="columns is-multiline is-variable is-0-desktop">
+            <div class="column is-tablet is-4-desktop">
+                <div class="programa">
+                    <h3>Información</h3>
+                    <p>
+                        Infórmate sobre todos los temas que te interesan: becas, concursos, ofertas de empleo, emprendimiento, acciones de voluntariado… La Oficina de Información Juvenil de la Casa de la Juventud tiene respuestas a todas tus preguntas.
+                    </p>
+                    <div class="buttons buttons-card">
+                        <a class="button has-arrow">Oficina de Información Juvenil</a>
+                        <a class="button has-arrow">Clubes de Información</a>
+                        <a class="button has-arrow">Corresponsales informativos</a>
+                        <a class="button has-arrow">Viajeteca</a>
                     </div>
-                  </a>
-                  <div class="accordion-content">
-                    <div class="columns is-multiline">
-                      <div class="column is-12-tablet is-6-desktop">
-                        <ul class="list-checks">
-                          <li>Asesoría de Estudios, Salidas</li>
-                          <li>Profesionales, Ocio y Tiempo Libre</li>
-                          <li>Asesoría Jurídica</li>
-                          <li>Asesoría Psicológica</li>
-                          <li>Asesoría de Asociacionismo Juvenil</li>
-                          <li>Asesoría de Emprendimiento Juvenil</li>
-                        </ul>
-                      </div><!-- column -->
-                      <div class="column is-12-tablet is-6-desktop">
-                        <img src="images/baile.jpg">
-                      </div><!-- column -->
-                    </div><!-- columns -->
-                  </div><!-- accordion-content -->
-                </div><!-- accordion -->
-                <div class="accordion is-active">
-                  <a class="accordion-header">
-                    <h3>Tu Casa para... asesorarte</h3>
-                    <div class="accordion-icon">
-                      <span class="material-symbols-outlined icon">
-                        do_not_disturb_on
-                      </span>
+                </div><!-- programa -->
+            </div><!-- column -->
+            <div class="column is-tablet is-4-desktop">
+                <div class="programa">
+                    <h3>Asesoramiento</h3>
+                    <p>
+                        Recibe una atención profesional, confidencial y gratuita en los ámbitos que te importen. Tus preguntas y cuestiones se atenderán ofreciendo una base sólida de información que te ayude a tomar decisiones de forma autónoma y eficaz.	
+                    </p>
+                    <div class="buttons buttons-card">
+                        <a class="button has-arrow">Asesoría psicológica</a>
+                        <a class="button has-arrow">Asesoría jurídica</a>
+                        <a class="button has-arrow">Asesoría de emprendimiento</a>
+                        <a class="button has-arrow">Asesoría asociacionismo</a>
+                        <a class="button has-arrow">Asesoría profesional</a>
                     </div>
-                  </a>
-                  <div class="accordion-content">
-                    <div class="columns is-multiline">
-                      <div class="column is-12-tablet is-6-desktop">
-                        <ul class="list-checks">
-                          <li>Asesoría de Estudios, Salidas</li>
-                          <li>Profesionales, Ocio y Tiempo Libre</li>
-                          <li>Asesoría Jurídica</li>
-                          <li>Asesoría Psicológica</li>
-                          <li>Asesoría de Asociacionismo Juvenil</li>
-                          <li>Asesoría de Emprendimiento Juvenil</li>
-                        </ul>
-                      </div><!-- column -->
-                      <div class="column is-12-tablet is-6-desktop">
-                        <img src="images/asesoramiento.jpg">
-                      </div><!-- column -->
-                    </div><!-- columns -->
-                  </div><!-- accordion-content -->
-                </div><!-- accordion -->
-                <div class="accordion">
-                  <a class="accordion-header">
-                    <h3>Tu Casa para... tus iniciativas</h3>
-                    <div class="accordion-icon">
-                      <span class="material-symbols-outlined icon">
-                        add_circle
-                        </span>
+                </div><!-- programa -->
+            </div><!-- column -->
+            <div class="column is-tablet is-4-desktop">
+                <div class="programa">
+                    <h3>Cultura</h3>
+                    <p>
+                        Disfruta de toda la oferta cultural de Pamplona pensada para jóvenes como tú. Podrás elegir entre cine, pintura, teatro, conciertos o ser protagonista de escena montando tu propio evento o participando en alguno de los certámenes literarios.
+                    </p>
+                    <div class="buttons buttons-card">
+                        <a class="button has-arrow">Cine</a>
+                        <a class="button has-arrow">Arte</a>
+                        <a class="button has-arrow">Música</a>
+                        <a class="button has-arrow">Literatura</a>
+                        <a class="button has-arrow">Intercambios culturales</a>
                     </div>
-                  </a>
-                  <div class="accordion-content">
-                    <div class="columns is-multiline">
-                      <div class="column is-12-tablet is-6-desktop">
-                        <ul class="list-checks">
-                          <li>Asesoría de Estudios, Salidas</li>
-                          <li>Profesionales, Ocio y Tiempo Libre</li>
-                          <li>Asesoría Jurídica</li>
-                        </ul>
-                      </div><!-- column -->
-                      <div class="column is-12-tablet is-6-desktop">
-                        <ul class="list-checks">
-                          <li>Asesoría Psicológica</li>
-                          <li>Asesoría de Asociacionismo Juvenil</li>
-                          <li>Asesoría de Emprendimiento Juvenil</li>
-                        </ul>
-                      </div><!-- column -->
-                    </div><!-- columns -->
-                  </div><!-- accordion-content -->
-                </div><!-- accordion -->
-                <div class="accordion">
-                  <a class="accordion-header">
-                    <h3>Tu Casa para... tu tiempo libre</h3>
-                    <div class="accordion-icon">
-                      <span class="material-symbols-outlined icon">
-                        add_circle
-                        </span>
+                </div><!-- programa -->
+            </div><!-- column -->
+            <div class="column is-tablet is-4-desktop">
+                <div class="programa">
+                    <h3>Información</h3>
+                    <p>
+                        Infórmate sobre todos los temas que te interesan: becas, concursos, ofertas de empleo, emprendimiento, acciones de voluntariado… La Oficina de Información Juvenil de la Casa de la Juventud tiene respuestas a todas tus preguntas.
+                    </p>
+                    <div class="buttons buttons-card">
+                        <a class="button has-arrow">Oficina de Información Juvenil</a>
+                        <a class="button has-arrow">Clubes de Información</a>
+                        <a class="button has-arrow">Corresponsales informativos</a>
+                        <a class="button has-arrow">Viajeteca</a>
                     </div>
-                  </a>
-                  <div class="accordion-content">
-                    <div class="columns is-multiline">
-                      <div class="column is-12-tablet is-6-desktop">
-                        <ul class="list-checks">
-                          <li>Asesoría de Estudios, Salidas</li>
-                          <li>Profesionales, Ocio y Tiempo Libre</li>
-                          <li>Asesoría Jurídica</li>
-                        </ul>
-                      </div><!-- column -->
-                      <div class="column is-12-tablet is-6-desktop">
-                        <ul class="list-checks">
-                          <li>Asesoría Psicológica</li>
-                          <li>Asesoría de Asociacionismo Juvenil</li>
-                          <li>Asesoría de Emprendimiento Juvenil</li>
-                        </ul>
-                      </div><!-- column -->
-                    </div><!-- columns -->
-                  </div><!-- accordion-content -->
-                </div><!-- accordion -->
-              </div><!-- accordions -->
+                </div><!-- programa -->
+            </div><!-- column -->
+            <div class="column is-tablet is-4-desktop">
+                <div class="programa">
+                    <h3>Asesoramiento</h3>
+                    <p>
+                        Recibe una atención profesional, confidencial y gratuita en los ámbitos que te importen. Tus preguntas y cuestiones se atenderán ofreciendo una base sólida de información que te ayude a tomar decisiones de forma autónoma y eficaz.	
+                    </p>
+                    <div class="buttons buttons-card">
+                        <a class="button has-arrow">Asesoría psicológica</a>
+                        <a class="button has-arrow">Asesoría jurídica</a>
+                        <a class="button has-arrow">Asesoría de emprendimiento</a>
+                        <a class="button has-arrow">Asesoría asociacionismo</a>
+                        <a class="button has-arrow">Asesoría profesional</a>
+                    </div>
+                </div><!-- programa -->
+            </div><!-- column -->
+            <div class="column is-tablet is-4-desktop">
+                <div class="programa">
+                    <h3>Cultura</h3>
+                    <p>
+                        Disfruta de toda la oferta cultural de Pamplona pensada para jóvenes como tú. Podrás elegir entre cine, pintura, teatro, conciertos o ser protagonista de escena montando tu propio evento o participando en alguno de los certámenes literarios.
+                    </p>
+                    <div class="buttons buttons-card">
+                        <a class="button has-arrow">Cine</a>
+                        <a class="button has-arrow">Arte</a>
+                        <a class="button has-arrow">Música</a>
+                        <a class="button has-arrow">Literatura</a>
+                        <a class="button has-arrow">Intercambios culturales</a>
+                    </div>
+                </div><!-- programa -->
             </div><!-- column -->
           </div><!-- columns -->
         </div><!-- container -->
@@ -797,7 +723,7 @@
     </footer>
     
 
-    <!-- gsap -->
+     <!-- gsap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
 
@@ -807,8 +733,15 @@
       AOS.init();
     </script>
 
+    <!-- splide -->
+    <script src="js/splide.min.js"></script>
+    <script>
+        new Splide( '.splide' ).mount();
+    </script>
+
      <!-- custom -->
      <script src="js/custom.js"></script>
+     
 
   </body>
 </html>

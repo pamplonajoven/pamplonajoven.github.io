@@ -5950,6 +5950,11 @@ footer.footer {
 .mt-2 {
   margin-top: 2rem !important; }
 
+@media screen and (min-width: 1024px) {
+  .columns.is-0-desktop .column {
+    padding: 0;
+    margin-bottom: -1px; } }
+
 section.section {
   background-color: #ffffff;
   padding: 1rem;
@@ -6492,6 +6497,36 @@ button, .button {
         -moz-box-shadow: 0px 0px 22px -4px rgba(45, 54, 50, 0.25);
         box-shadow: 0px 0px 22px -4px rgba(45, 54, 50, 0.25); }
 
+.programa {
+  border-radius: 1rem;
+  padding: 1rem;
+  border: 1px solid #999999;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: #2D3632;
+  height: 100%; }
+  @media screen and (min-width: 769px), print {
+    .programa {
+      padding: 2rem; } }
+  @media screen and (min-width: 1024px) {
+    .programa {
+      margin-right: -1px; } }
+  .programa h3 {
+    margin-bottom: 1rem; }
+  .programa p {
+    margin-bottom: 2rem; }
+  .programa .buttons.buttons-card {
+    margin-top: auto;
+    gap: 0; }
+    .programa .buttons.buttons-card .button {
+      font-size: 14px;
+      padding: .5rem 1rem;
+      margin: 0 0 -1px 0; }
+      .programa .buttons.buttons-card .button::before {
+        font-size: 16px; }
+
 .box {
   border-radius: 1rem;
   padding: 1rem;
@@ -6589,3 +6624,40 @@ form.is-dark {
       color: #ffffff; }
   form.is-dark label.checkbox:hover {
     color: #ffffff; }
+
+.splide__slide {
+  position: relative;
+  background-color: #000000;
+  border-radius: 1rem; }
+  @media screen and (min-width: 769px), print {
+    .splide__slide {
+      border-radius: 3rem; } }
+  .splide__slide .slide-image img {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    min-width: 100%;
+    border-radius: 1rem;
+    min-height: 350px;
+    line-height: 0;
+    display: block;
+    opacity: .4; }
+    @media screen and (min-width: 769px), print {
+      .splide__slide .slide-image img {
+        aspect-ratio: 16 / 9;
+        border-radius: 3rem;
+        min-height: none; } }
+    @media screen and (min-width: 1024px) {
+      .splide__slide .slide-image img {
+        aspect-ratio: 26 / 9; } }
+  .splide__slide .slide-copy {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1rem; }
+    .splide__slide .slide-copy h1 {
+      line-height: 1.1;
+      color: #ffffff; }
