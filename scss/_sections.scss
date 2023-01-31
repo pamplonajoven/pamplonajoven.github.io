@@ -15,11 +15,9 @@ section.section{
 	}
 	&.section-hero{
 		background-color: $white;
-		padding-left: 0;
-		padding-right: 0;
-		padding-bottom: 0;
+		padding:0;
 		border-top-left-radius: 0;
-		border-top-right-radius: 0;
+    	border-top-right-radius: 0;
 	}
 	&.section-banner{
 		background-color: $dark;

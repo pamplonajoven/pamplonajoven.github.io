@@ -5959,9 +5959,7 @@ section.section {
       padding-bottom: 3rem; } }
   section.section.section-hero {
     background-color: #ffffff;
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 0;
+    padding: 0;
     border-top-left-radius: 0;
     border-top-right-radius: 0; }
   section.section.section-banner {
@@ -6118,6 +6116,8 @@ section.section {
     .navbar.navbar-custom.sticky {
       border-bottom-left-radius: 3rem;
       border-bottom-right-radius: 3rem; } }
+  .navbar.navbar-custom.sticky + .main {
+    margin-top: 90px; }
 
 .navbar-secondary {
   background-color: #ffffff;
