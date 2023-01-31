@@ -20,7 +20,21 @@
     }
     &.active{
       &::before{
-        width: 200px;
+        width: 250px;
+      }
+    }
+  }
+
+  .bg-gradient.reveal{
+    &::before{
+      transition: 3s all ease-in;
+      opacity: 0;
+      background-size: 0;
+    }
+    &.active{
+      &::before{
+        opacity: 1;
+        background-size: cover;
       }
     }
   }

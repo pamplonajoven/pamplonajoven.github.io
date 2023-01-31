@@ -1,8 +1,11 @@
+
+
 section.section{
 	background-color: $white;
 	padding: 1rem;
 	position: relative;
 	z-index: 1;
+	overflow: hidden;
 	@include radius;
 	@include tablet{
 		@include radius-lg;
@@ -17,10 +20,6 @@ section.section{
 		padding-bottom: 0;
 		border-top-left-radius: 0;
 		border-top-right-radius: 0;
-	}
-	&.section-secondary{
-		background-color: $white;
-	
 	}
 	&.section-banner{
 		background-color: $dark;
@@ -72,6 +71,7 @@ section.section{
 		}
 	}
 }
+
 
 //Radius states
 .radius-top{
