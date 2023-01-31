@@ -5827,7 +5827,7 @@ html {
   overflow-x: hidden; }
 
 body {
-  background-color: #2D3632; }
+  background-color: #ffffff; }
   body.no-scroll {
     overflow: hidden;
     height: 100vh;
@@ -5838,7 +5838,8 @@ body {
 
 main.main {
   position: relative;
-  z-index: 3; }
+  z-index: 3;
+  background-color: #2D3632; }
 
 header.hero {
   position: relative;
@@ -6028,7 +6029,8 @@ section.section {
       padding: 0 3rem; } }
   .navbar.navbar-custom .navbar-menu {
     align-items: center;
-    margin-right: 0; }
+    margin-right: 0;
+    box-shadow: none; }
     .navbar.navbar-custom .navbar-menu a.navbar-item, .navbar.navbar-custom .navbar-menu a.navbar-link {
       border-radius: 100px;
       border: 1px solid #999999;
@@ -6041,8 +6043,14 @@ section.section {
         background-color: #FEFF00;
         border-color: #2D3632; }
     .navbar.navbar-custom .navbar-menu.is-active {
+      box-shadow: none;
       background-color: #ffffff;
-      padding: 1rem; }
+      padding: 1rem;
+      overflow-y: scroll;
+      position: fixed;
+      width: 100%;
+      inset: 0;
+      top: 88px; }
       .navbar.navbar-custom .navbar-menu.is-active a.navbar-item, .navbar.navbar-custom .navbar-menu.is-active a.navbar-link {
         padding-top: .6rem;
         padding-bottom: .6rem;

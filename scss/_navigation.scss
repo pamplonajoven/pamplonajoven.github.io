@@ -6,6 +6,7 @@
     .navbar-menu{
         align-items: center;
         margin-right: 0;
+        box-shadow: none;
         a.navbar-item, a.navbar-link{
             border-radius: 100px;
             border: 1px solid $gray;
@@ -21,8 +22,14 @@
         }
         // El menú abierto en responsive vertical
         &.is-active{
+            box-shadow: none;
             background-color: $white;
             padding: 1rem;
+            overflow-y: scroll;
+            position: fixed;
+            width: 100%;
+            inset: 0;
+            top: 88px;
             a.navbar-item, a.navbar-link{
                 padding-top: .6rem;
                 padding-bottom: .6rem;
