@@ -6377,7 +6377,6 @@ section.section {
 .banner-newsletter {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   gap: 1rem;
   background-color: #00CD5F;
@@ -6395,6 +6394,9 @@ section.section {
       background-size: 8rem; } }
   .banner-newsletter h3 {
     line-height: 1.1; }
+    @media screen and (min-width: 1024px) {
+      .banner-newsletter h3 {
+        width: 17ch; } }
   .banner-newsletter p {
     color: #2D3632;
     font-weight: 600; }

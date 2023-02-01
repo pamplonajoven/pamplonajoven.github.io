@@ -54,7 +54,6 @@
 .banner-newsletter{
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     gap: 1rem;
     background-color: $secondary;
@@ -72,6 +71,9 @@
     }
     h3{
         line-height: 1.1;
+        @include desktop{
+            width: 17ch;
+        }
     }
     p{
         color: $dark;
