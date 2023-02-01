@@ -5675,7 +5675,7 @@ h2 {
   z-index: 0; }
   @media screen and (min-width: 769px), print {
     h2 {
-      padding: 3rem 1rem; } }
+      padding: 3rem 1rem 3.5rem 1rem; } }
   h2.has-bg::before {
     content: "";
     display: block;
@@ -6665,13 +6665,45 @@ form.is-dark {
         aspect-ratio: 26 / 9; } }
   .splide__slide .slide-copy {
     position: absolute;
-    top: 3rem;
-    left: 3rem;
+    top: 0;
+    left: 0;
     z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 1rem; }
+    padding: 2rem;
+    height: 100%;
+    align-items: center;
+    width: 100%; }
     .splide__slide .slide-copy h1 {
       line-height: 1.1;
-      color: #ffffff; }
+      color: #ffffff;
+      font-size: 40px;
+      margin-bottom: 1rem; }
+      @media screen and (min-width: 1024px) {
+        .splide__slide .slide-copy h1 {
+          max-width: 24ch; } }
+    .splide__slide .slide-copy p {
+      color: #ffffff;
+      font-size: 16px;
+      margin-bottom: 1rem;
+      font-weight: 600; }
+      @media screen and (min-width: 1024px) {
+        .splide__slide .slide-copy p {
+          font-size: 18px; } }
+    .splide__slide .slide-copy .button {
+      margin-top: 1rem; }
+
+.splide__pagination__page {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  transform: none;
+  width: 10px;
+  height: 10px; }
+  .splide__pagination__page.is-active {
+    background-color: #FEFF00;
+    border: 1px solid #FEFF00;
+    transform: none; }
+  @media screen and (min-width: 1024px) {
+    .splide__pagination__page {
+      margin: 3px 9px; } }
