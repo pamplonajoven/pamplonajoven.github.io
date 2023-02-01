@@ -5887,6 +5887,13 @@ header.hero {
     header.hero .hero-copy h1 {
       line-height: 1.1;
       color: #ffffff; }
+  header.hero.is-simple {
+    padding: 3rem 0;
+    background-color: #00CD5F; }
+    header.hero.is-simple h1 {
+      line-height: 1.1;
+      color: #2D3632;
+      font-size: clamp(24px, 3vw, 50px); }
 
 .hero-nav {
   position: absolute;
@@ -5959,6 +5966,13 @@ footer.footer {
   .columns.is-0-desktop .column {
     padding: 0;
     margin-bottom: -1px; } }
+
+.title-block {
+  display: block;
+  margin: 2.5rem 0; }
+  .title-block .month {
+    text-transform: uppercase;
+    color: #DDDDDD; }
 
 section.section {
   background-color: #ffffff;
