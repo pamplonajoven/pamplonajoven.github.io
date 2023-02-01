@@ -5989,7 +5989,7 @@ section.section {
     line-height: 0;
     z-index: 0; }
     section.section.section-image img {
-      aspect-ratio: 16 / 9;
+      aspect-ratio: 4 / 3;
       object-fit: cover;
       min-width: 100%;
       margin: -2.5rem 0;
@@ -5997,6 +5997,9 @@ section.section {
       @media screen and (min-width: 769px), print {
         section.section.section-image img {
           border-radius: 3rem;
+          aspect-ratio: 16 / 9; } }
+      @media screen and (min-width: 1024px) {
+        section.section.section-image img {
           aspect-ratio: 16 / 6; } }
   section.section.post-banner {
     margin-top: -6rem; }
