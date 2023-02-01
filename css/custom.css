@@ -5730,7 +5730,7 @@ h4 {
 
 .text-colophon {
   text-align: center;
-  margin: 1rem auto 3rem auto; }
+  margin: 3rem auto; }
   @media screen and (min-width: 769px), print {
     .text-colophon {
       width: 60ch; } }
@@ -6501,7 +6501,7 @@ button, .button {
   border-radius: 1rem;
   padding: 1rem;
   border: 1px solid #999999;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.8);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -6524,6 +6524,8 @@ button, .button {
       font-size: 14px;
       padding: .5rem 1rem;
       margin: 0 0 -1px 0; }
+      .programa .buttons.buttons-card .button:hover, .programa .buttons.buttons-card .button:active {
+        background-color: #FEFF00; }
       .programa .buttons.buttons-card .button::before {
         font-size: 16px; }
 
