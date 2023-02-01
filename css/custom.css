@@ -6054,7 +6054,9 @@ section.section {
         margin: 1.5rem 0;
         text-align: center; }
       .navbar.navbar-custom .navbar-menu.is-active .navbar-dropdown {
-        margin-bottom: .5rem; }
+        margin-bottom: .5rem;
+        margin-top: -9px;
+        box-shadow: none; }
   .navbar.navbar-custom .navbar-brand {
     align-items: center; }
     .navbar.navbar-custom .navbar-brand .navbar-item.is-logo {
