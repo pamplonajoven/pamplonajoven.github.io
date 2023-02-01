@@ -1,18 +1,3 @@
-// .reveal{
-//     position: relative;
-//     transform: translateY(30px);
-//     opacity: 1;
-//     transition: .75s all ease;
-//     @include desktop{
-//       opacity: 0;
-//       transform: translateY(50px);
-//     }
-//   }
-
-//   .reveal.active{
-//     transform: translateY(0);
-//     opacity: 1;
-//   }
 
   h2.has-bg.reveal{
     &:before{
@@ -25,20 +10,6 @@
       }
     }
   }
-
-  // .bg-gradient.reveal{
-  //   &::before{
-  //     transition: 3s all ease-in;
-  //     opacity: 0;
-  //     background-size: 0;
-  //   }
-  //   &.active{
-  //     &::before{
-  //       opacity: 1;
-  //       background-size: cover;
-  //     }
-  //   }
-  // }
 
     //Other animations
     .fade-in{
@@ -63,9 +34,6 @@
   //Progress
 
   progress {
-    // position: fixed;
-    // top: 0;
-    // left: 0;
     -webkit-appearance: none;
     appearance: none;
     width: 80%;

@@ -76,8 +76,10 @@ $radius-child:.5rem;
 
 //Background gradient
 .bg-gradient{
-    background-image: url("../images/gradient.jpg");
+    background-color: $white;
+    background-image: url("../images/gradient-card.jpg");
 	background-size: cover;
+    background-position: bottom right;
         
 }
 
