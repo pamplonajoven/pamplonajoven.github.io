@@ -88,3 +88,14 @@
         margin: 3px 9px;
     }
 }
+
+.splide__arrow{
+	background-color: transparent;
+	border: 1px solid $primary;
+	transform: none;
+	color: $primary;
+	&:hover, &:active{
+		background-color: $primary;
+		color: $dark;
+	}
+}

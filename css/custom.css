@@ -6685,3 +6685,12 @@ form.is-dark {
   @media screen and (min-width: 1024px) {
     .splide__pagination__page {
       margin: 3px 9px; } }
+
+.splide__arrow {
+  background-color: transparent;
+  border: 1px solid #FEFF00;
+  transform: none;
+  color: #FEFF00; }
+  .splide__arrow:hover, .splide__arrow:active {
+    background-color: #FEFF00;
+    color: #2D3632; }
