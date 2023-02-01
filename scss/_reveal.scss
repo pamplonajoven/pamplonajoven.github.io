@@ -26,19 +26,19 @@
     }
   }
 
-  .bg-gradient.reveal{
-    &::before{
-      transition: 3s all ease-in;
-      opacity: 0;
-      background-size: 0;
-    }
-    &.active{
-      &::before{
-        opacity: 1;
-        background-size: cover;
-      }
-    }
-  }
+  // .bg-gradient.reveal{
+  //   &::before{
+  //     transition: 3s all ease-in;
+  //     opacity: 0;
+  //     background-size: 0;
+  //   }
+  //   &.active{
+  //     &::before{
+  //       opacity: 1;
+  //       background-size: cover;
+  //     }
+  //   }
+  // }
 
     //Other animations
     .fade-in{

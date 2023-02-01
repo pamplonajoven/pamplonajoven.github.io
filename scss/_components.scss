@@ -35,6 +35,8 @@
             min-height: 12rem;
             img{
                 @include radius-child;
+                aspect-ratio: 16 / 9;
+                    object-fit: cover;
                 @include desktop{
                     @include radius;
                     position: absolute;
