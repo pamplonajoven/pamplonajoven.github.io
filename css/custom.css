@@ -6263,6 +6263,8 @@ section.section {
     padding-top: 1rem;
     display: none;
     min-height: 12rem; }
+    .accordions .accordion .accordion-content p {
+      margin-bottom: 1rem; }
     .accordions .accordion .accordion-content img {
       border-radius: 0.5rem;
       aspect-ratio: 16 / 9;

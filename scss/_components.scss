@@ -33,6 +33,9 @@
             padding-top: 1rem;
             display: none;
             min-height: 12rem;
+            p{
+                margin-bottom: 1rem
+            }
             img{
                 @include radius-child;
                 aspect-ratio: 16 / 9;
