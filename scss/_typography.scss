@@ -147,6 +147,19 @@ h4{
 	}
 }
 
+.ladillo{
+	background-color: $primary;
+	@include radius;
+	font-size: 22px;
+	height: 100%;
+	padding: 1.5rem;
+	display: flex;
+	justify-content: center;
+	@include desktop{
+		padding: 3rem;
+	}
+}
+
 
 //Lists
 

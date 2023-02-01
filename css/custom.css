@@ -5735,6 +5735,18 @@ h4 {
     .text-colophon {
       width: 60ch; } }
 
+.ladillo {
+  background-color: #FEFF00;
+  border-radius: 1rem;
+  font-size: 22px;
+  height: 100%;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center; }
+  @media screen and (min-width: 1024px) {
+    .ladillo {
+      padding: 3rem; } }
+
 .list-checks li {
   display: flex;
   align-items: center;
