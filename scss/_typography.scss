@@ -133,6 +133,10 @@ h4{
 	@include tablet{
 		width: 50ch;
 	}
+	&.is-alone{
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+	}
 }
 
 .strong,strong,b{
@@ -218,5 +222,36 @@ h4{
 .list-legal{
 	li:not(:last-of-type){
 		margin-bottom: .2rem;
+	}
+}
+
+.list-links{
+	display: flex;
+	flex-direction: column;
+	li {
+		border-bottom: 1px solid $gray;
+		a{
+			display: flex;
+			align-items: center;
+			padding: .5rem;
+			border-radius: 100px;
+			&:before{
+				font-family: 'Material Symbols Outlined';
+				content: "\e941";
+				font-size: 26px;
+				color: $secondary;
+				margin-right: .3rem;
+			}
+			&:last-child{
+				margin-bottom: 0;
+			}
+			color: $dark;
+			&:hover, &:active{
+				background-color: $primary;
+				&:before{
+					color: $dark;
+				}
+			}
+		}
 	}
 }

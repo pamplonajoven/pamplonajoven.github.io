@@ -5699,6 +5699,9 @@ h4 {
   @media screen and (min-width: 769px), print {
     .lead {
       width: 50ch; } }
+  .lead.is-alone {
+    padding-top: 3rem;
+    padding-bottom: 3rem; }
 
 .strong, strong, b {
   font-weight: 700; }
@@ -5762,6 +5765,30 @@ h4 {
 
 .list-legal li:not(:last-of-type) {
   margin-bottom: .2rem; }
+
+.list-links {
+  display: flex;
+  flex-direction: column; }
+  .list-links li {
+    border-bottom: 1px solid #999999; }
+    .list-links li a {
+      display: flex;
+      align-items: center;
+      padding: .5rem;
+      border-radius: 100px;
+      color: #2D3632; }
+      .list-links li a:before {
+        font-family: 'Material Symbols Outlined';
+        content: "\e941";
+        font-size: 26px;
+        color: #00CD5F;
+        margin-right: .3rem; }
+      .list-links li a:last-child {
+        margin-bottom: 0; }
+      .list-links li a:hover, .list-links li a:active {
+        background-color: #FEFF00; }
+        .list-links li a:hover:before, .list-links li a:active:before {
+          color: #2D3632; }
 
 h2.has-bg.reveal:before {
   transition: 2s all ease-in-out;
@@ -6506,6 +6533,8 @@ button, .button {
     margin-bottom: 1rem; }
   .programa p {
     margin-bottom: 2rem; }
+    .programa p:not(:last-of-type) {
+      margin-bottom: 1rem; }
   .programa .buttons.buttons-card {
     margin-top: auto;
     gap: 0; }
