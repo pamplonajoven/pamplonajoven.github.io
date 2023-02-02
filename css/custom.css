@@ -6050,6 +6050,19 @@ header.hero {
     header.hero .hero-copy h1 {
       line-height: 1.1;
       color: #ffffff; }
+    header.hero .hero-copy .lead {
+      color: #ffffff;
+      margin-top: 1rem;
+      font-weight: 600;
+      line-height: 1.3; }
+      @media screen and (min-width: 769px), print {
+        header.hero .hero-copy .lead {
+          font-size: 18px;
+          width: 46ch; } }
+      @media screen and (min-width: 1024px) {
+        header.hero .hero-copy .lead {
+          font-size: 20px;
+          line-height: 1.4; } }
   header.hero.is-simple {
     padding: 3rem;
     background-color: #00CD5F;
@@ -6722,6 +6735,39 @@ button, .button {
       .programa .buttons.buttons-card .button:hover, .programa .buttons.buttons-card .button:active {
         background-color: #FEFF00; }
       .programa .buttons.buttons-card .button::before {
+        font-size: 16px; }
+
+.subprograma {
+  border-radius: 1rem;
+  padding: 1rem;
+  border: 1px solid #999999;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: #2D3632; }
+  @media screen and (min-width: 769px), print {
+    .subprograma {
+      padding: 2rem; } }
+  @media screen and (min-width: 1024px) {
+    .subprograma {
+      margin-bottom: -1px; } }
+  .subprograma h3 {
+    margin-bottom: 1rem; }
+  .subprograma p {
+    margin-bottom: 2rem; }
+    .subprograma p:not(:last-of-type) {
+      margin-bottom: 1rem; }
+  .subprograma .buttons.buttons-card {
+    margin-top: auto;
+    gap: 0; }
+    .subprograma .buttons.buttons-card .button {
+      font-size: 14px;
+      padding: .5rem 1rem;
+      margin: 0 0 -1px 0; }
+      .subprograma .buttons.buttons-card .button:hover, .subprograma .buttons.buttons-card .button:active {
+        background-color: #FEFF00; }
+      .subprograma .buttons.buttons-card .button::before {
         font-size: 16px; }
 
 .box {
