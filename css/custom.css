@@ -5885,6 +5885,7 @@ h4 {
   display: block;
   margin: 2.5rem 0; }
   .title-block .month {
+    text-transform: uppercase;
     color: #999999; }
 
 .list-checks li {
