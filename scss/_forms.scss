@@ -55,3 +55,10 @@ form.is-dark{
 		margin-left: .5rem;
 	}
 }
+
+//Form agenda
+.form-events{
+    input,.select{
+        border-color: $white;
+    }
+}

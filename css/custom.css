@@ -6836,6 +6836,9 @@ form.is-dark {
     font-size: 14px;
     margin-left: .5rem; }
 
+.form-events input, .form-events .select {
+  border-color: #ffffff; }
+
 .splide__slide {
   position: relative;
   background-color: #000000;
