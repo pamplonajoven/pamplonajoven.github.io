@@ -5958,7 +5958,10 @@ h2.has-bg.reveal:before {
   width: 0; }
 
 h2.has-bg.reveal.active::before {
-  width: 340px; }
+  width: 50%; }
+  @media screen and (min-width: 1024px) {
+    h2.has-bg.reveal.active::before {
+      width: 30%; } }
 
 .fade-in {
   animation: fadeIn ease 1.5s;
@@ -6716,7 +6719,7 @@ button, .button {
 
 .programa {
   border-radius: 1rem;
-  padding: 1rem;
+  padding: 1.5rem;
   border: 1px solid #999999;
   background-color: rgba(255, 255, 255, 0.8);
   position: relative;
@@ -6750,13 +6753,14 @@ button, .button {
 
 .subprograma {
   border-radius: 1rem;
-  padding: 1rem;
+  padding: 1.5rem;
   border: 1px solid #999999;
   background-color: rgba(255, 255, 255, 0.8);
   position: relative;
   display: flex;
   flex-direction: column;
-  color: #2D3632; }
+  color: #2D3632;
+  margin-bottom: 1.5rem; }
   @media screen and (min-width: 769px), print {
     .subprograma {
       padding: 2rem; } }

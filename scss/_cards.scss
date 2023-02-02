@@ -75,7 +75,7 @@
 //Programa card
 .programa{
     @include radius;
-    padding: 1rem;
+    padding: 1.5rem;
     border: 1px solid $gray;
     background-color: rgba($white, .8);
     position: relative;
@@ -118,13 +118,14 @@
 //Subprograma card
 .subprograma{
     @include radius;
-    padding: 1rem;
+    padding: 1.5rem;
     border: 1px solid $gray;
     background-color: rgba($white, .8);
     position: relative;
     display: flex;
     flex-direction: column;
     color: $dark;
+    margin-bottom: 1.5rem;
     @include tablet{
         padding: 2rem;
     }

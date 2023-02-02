@@ -6,7 +6,10 @@
     }
     &.active{
       &::before{
-        width: 340px;
+        width: 50%;
+        @include desktop{
+          width: 30%;
+        }
       }
     }
   }
