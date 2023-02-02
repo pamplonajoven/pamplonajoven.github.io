@@ -295,9 +295,28 @@
 }
 
 //Tabs
-.tabs.is-toggle li.is-active a{
-    background-color: $dark;
-    border-color: $dark;
+.tabs.is-toggle li{
+    a{
+        border-radius: 100px;
+    }
+    &.is-active{
+        a{
+            background-color: $dark;
+            border-color: $dark;
+        }
+    }
+    &:first-child{
+        a{
+            border-top-left-radius: 100px;
+            border-bottom-left-radius:100px;
+        }
+    }
+    &:last-child{
+        a{
+            border-top-right-radius: 100px;
+            border-bottom-right-radius:100px;
+        }
+    }
 }
 
 //Pagination

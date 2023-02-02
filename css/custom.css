@@ -6447,9 +6447,20 @@ section.section {
   padding-top: 7rem;
   margin-top: -7rem; }
 
+.tabs.is-toggle li a {
+  border-radius: 100px; }
+
 .tabs.is-toggle li.is-active a {
   background-color: #2D3632;
   border-color: #2D3632; }
+
+.tabs.is-toggle li:first-child a {
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px; }
+
+.tabs.is-toggle li:last-child a {
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px; }
 
 .pagination {
   margin-top: 2rem; }
