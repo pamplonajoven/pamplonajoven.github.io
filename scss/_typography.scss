@@ -165,8 +165,17 @@ h4{
 }
 
 
-//Lists
+//Blocks
+.title-block{
+	display: block;
+	margin: 2.5rem 0;
+	.month{
+		
+		color: $gray;
+	}
+}
 
+//Lists
 .list-checks{
 	li{
 		display: flex;
@@ -184,6 +193,7 @@ h4{
 		}
 	}
 }
+
 
 .list-bullets{
 	padding-left: 1rem;

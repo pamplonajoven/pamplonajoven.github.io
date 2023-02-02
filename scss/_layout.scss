@@ -65,12 +65,18 @@ header.hero{
 		}
 	}
 	&.is-simple{
-		padding: 3rem 0;
+		padding: 3rem;
 		background-color: $secondary;
 		h1{
 			line-height: 1.1;
 			color: $dark;
 			@include fs-title2;
+			margin: 1.5rem 0 2.5rem;
+		}
+		.breadcrumbs{
+			li{
+				color: $dark;
+			}
 		}
 	}
 }
@@ -166,15 +172,5 @@ footer.footer{
 			padding: 0;
 			margin-bottom:-1px;
 		}
-	}
-}
-
-//Blocks
-.title-block{
-	display: block;
-	margin: 2.5rem 0;
-	.month{
-		text-transform: uppercase;
-		color: $gray-light;
 	}
 }

@@ -139,16 +139,36 @@
               </div><!-- hero-nav -->
               <div class="container">
                 <h1>Agenda</h1>
-              <form>
+                <p class="is-hidden-desktop has-text-centered">
+                  <a class="toggle-search">
+                    <span>Mostrar buscador</span>
+                    <span class="material-symbols-outlined">
+                      arrow_downward
+                      </span>
+                  </a>
+                </p>
+              <form class="form-events is-hidden-touch">
                 <div class="columns is-multiline is-centered">
                     <div class="column is-4-tablet">
-                        buscar por nombre
+                      <input class="input" type="text" placeholder="Busca un evento por nombre">
                     </div>
                     <div class="column is-4-tablet">
-                        selector categorías
+                      <div class="select is-fullwidth">
+                        <select>
+                          <option>Categorías</option>
+                          <option value="Ciclos y festivales">Ciclos y festivales</option>
+                          <option value="Juegos">Juegos </option>
+                          <option value="Cine y teatro">Cine y teatro</option>
+                          <option value="Conferencias y charlas">Conferencias y charlas</option>
+                          <option value="Deporte y Medioambiente">Deporte y Medioambiente</option>
+                          <option value="Exposiciones">Exposiciones</option>
+                          <option value="Exposiciones">Fiestas y folklore</option>
+                          <option value="Exposiciones">Música y danza</option>
+                        </select>
+                      </div>
                     </div>
                     <div class="column is-4-tablet">
-                        selector mes
+                      <input class="input" type="month" name="mes">
                     </div>
                 </div>
               </form>
@@ -335,6 +355,25 @@
                       </div>
                     </div><!-- card-wrapper -->
                   </a>
+                </div><!-- column -->
+              </div><!-- columns -->
+              <div class="columns is-centered">
+                <div class="column is-8-desktop">
+                  <nav class="pagination is-rounded is-centered">
+                    <a class="pagination-previous is-disabled">Anterior</a>
+                    <a class="pagination-next">Siguiente</a>
+                    <ul class="pagination-list">
+                      <li>
+                        <a class="pagination-link is-current" aria-label="Page 1" aria-current="page">1</a>
+                      </li>
+                      <li>
+                        <a class="pagination-link" aria-label="Goto page 2">2</a>
+                      </li>
+                      <li>
+                        <a class="pagination-link" aria-label="Goto page 3">3</a>
+                      </li>
+                    </ul>
+                  </nav>
                 </div><!-- column -->
               </div><!-- columns -->
         </div><!-- container -->

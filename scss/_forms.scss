@@ -7,7 +7,7 @@ outline: none;
 }
 
 .control{
-    input,textarea{
+    input,textarea, select{
         box-shadow: none;
         &:hover, &:focus, &:active{
             border-color: $primary;
@@ -33,4 +33,25 @@ form.is-dark{
             color: $white;
         }
     }
+}
+
+//Select
+.select:not(.is-multiple):not(.is-loading)::after{
+    border-radius: 0;
+    border-width: 2px;
+}
+
+//Show-hide search form
+.toggle-search{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    color: $dark;
+    border: 1px solid $dark;
+    border-radius: 100px;
+    padding: 1rem;
+	.material-symbols-outlined{
+		font-size: 14px;
+		margin-left: .5rem;
+	}
 }
