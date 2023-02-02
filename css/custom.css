@@ -6780,7 +6780,7 @@ button, .button {
   border-radius: 1rem;
   padding: 1.5rem;
   border: 1px solid #999999;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.7);
   position: relative;
   display: flex;
   flex-direction: column;
