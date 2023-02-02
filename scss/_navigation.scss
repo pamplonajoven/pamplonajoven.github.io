@@ -178,9 +178,11 @@
     ul{
         display: flex;
         flex-direction: row;
-        gap: .5rem;
+        gap: .2rem;
         li{
             font-size: $small;
+            display: flex;
+            align-items: center;
             @include desktop{
                 font-size: $regular;
             }
@@ -189,9 +191,11 @@
                 color: $white;
             }
             &:not(:last-child):after{
-                content: "/";
-                display: inline;
-                padding-left: .25rem;
+                font-family: 'Material Symbols Outlined';
+                font-size: 18px;
+                content: "\e409";
+                padding-left: .1rem;
+                line-height: 0;
             }
         }
     }

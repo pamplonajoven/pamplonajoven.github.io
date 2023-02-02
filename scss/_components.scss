@@ -76,3 +76,24 @@
         }
     }
 }
+
+//Event detail
+.event-detail{
+    .columns{
+        @include desktop{
+            flex-direction: row-reverse;
+        }
+    }
+    border: 1px solid red;
+    margin: 3rem 0 0 0;
+    h1{
+        line-height: 1.1;
+        color: $dark;
+        @include fs-title2;
+        text-align: left;
+    }
+    .category{
+        text-transform: uppercase;
+
+    }
+}

@@ -94,6 +94,18 @@ header.hero{
 			}
 		}
 	}
+	&.is-detail{
+		padding: 3rem;
+		background-color: $white;
+		.breadcrumbs{
+			li{
+				color: $dark;
+				a{
+					color: $secondary;
+				}
+			}
+		}
+	}
 }
 
 .hero-nav{

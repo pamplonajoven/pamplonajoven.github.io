@@ -6077,6 +6077,13 @@ header.hero {
       margin: 1.5rem 0 2.5rem; }
     header.hero.is-simple .breadcrumbs li {
       color: #2D3632; }
+  header.hero.is-detail {
+    padding: 3rem;
+    background-color: #ffffff; }
+    header.hero.is-detail .breadcrumbs li {
+      color: #2D3632; }
+      header.hero.is-detail .breadcrumbs li a {
+        color: #00CD5F; }
 
 .hero-nav {
   position: absolute;
@@ -6367,9 +6374,11 @@ section.section {
 .breadcrumbs ul {
   display: flex;
   flex-direction: row;
-  gap: .5rem; }
+  gap: .2rem; }
   .breadcrumbs ul li {
     font-size: 14px;
+    display: flex;
+    align-items: center;
     color: #FEFF00; }
     @media screen and (min-width: 1024px) {
       .breadcrumbs ul li {
@@ -6377,9 +6386,11 @@ section.section {
     .breadcrumbs ul li a {
       color: #ffffff; }
     .breadcrumbs ul li:not(:last-child):after {
-      content: "/";
-      display: inline;
-      padding-left: .25rem; }
+      font-family: 'Material Symbols Outlined';
+      font-size: 18px;
+      content: "\e409";
+      padding-left: .1rem;
+      line-height: 0; }
 
 .anchors {
   display: none; }
@@ -6535,6 +6546,20 @@ section.section {
       display: block; }
     .accordions .accordion.is-active:hover, .accordions .accordion.is-active:active {
       border-color: #2D3632; }
+
+.event-detail {
+  border: 1px solid red;
+  margin: 3rem 0 0 0; }
+  @media screen and (min-width: 1024px) {
+    .event-detail .columns {
+      flex-direction: row-reverse; } }
+  .event-detail h1 {
+    line-height: 1.1;
+    color: #2D3632;
+    font-size: clamp(24px, 3vw, 50px);
+    text-align: left; }
+  .event-detail .category {
+    text-transform: uppercase; }
 
 .banner-info {
   background-image: url("../images/banner-info-sm.jpg");
