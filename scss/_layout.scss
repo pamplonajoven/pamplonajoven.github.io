@@ -67,6 +67,7 @@ header.hero{
 	&.is-simple{
 		padding: 3rem;
 		background-color: $secondary;
+		background: linear-gradient(137deg, $secondary 46%, $primary 100%);
 		h1{
 			line-height: 1.1;
 			color: $dark;

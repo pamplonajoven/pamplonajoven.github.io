@@ -6052,7 +6052,8 @@ header.hero {
       color: #ffffff; }
   header.hero.is-simple {
     padding: 3rem;
-    background-color: #00CD5F; }
+    background-color: #00CD5F;
+    background: linear-gradient(137deg, #00CD5F 46%, #FEFF00 100%); }
     header.hero.is-simple h1 {
       line-height: 1.1;
       color: #2D3632;
