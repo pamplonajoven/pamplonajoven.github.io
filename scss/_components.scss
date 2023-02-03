@@ -84,16 +84,34 @@
             flex-direction: row-reverse;
         }
     }
-    border: 1px solid red;
     margin: 3rem 0 0 0;
     h1{
         line-height: 1.1;
         color: $dark;
         @include fs-title2;
         text-align: left;
+        margin-bottom:2rem;
     }
     .category{
         text-transform: uppercase;
+        margin-bottom: 1rem;
+        font-weight: $semi-bold;
 
+    }
+    .description{
+        margin-top: 1rem;
+        p{
+            margin-bottom: 1rem;
+            @include desktop{
+                font-size: 18px;
+                line-height: 1.4;
+            }
+        }
+    }
+    .buttons{
+        margin-top: 2rem;
+    }
+    .event-image img{
+        @include radius;
     }
 }

@@ -5859,8 +5859,9 @@ h4 {
     padding-top: 3rem;
     padding-bottom: 3rem; }
 
-.strong, strong, b {
-  font-weight: 700; }
+.strong, strong, b, .is-bold {
+  font-weight: 700;
+  display: contents; }
 
 .text-colophon {
   text-align: center;
@@ -5952,6 +5953,28 @@ h4 {
         background-color: #FEFF00; }
         .list-links li a:hover:before, .list-links li a:active:before {
           color: #2D3632; }
+
+.list-details li {
+  display: flex;
+  align-items: center;
+  margin-bottom: .5rem;
+  border-bottom: 1px solid #999999;
+  padding-bottom: .5rem; }
+  .list-details li a {
+    color: #2D3632; }
+  .list-details li:before {
+    font-family: 'Material Symbols Outlined';
+    font-size: 22px;
+    color: #2D3632;
+    margin-right: .3rem; }
+  .list-details li.place:before {
+    content: "\e55e"; }
+  .list-details li.date:before {
+    content: "\e878"; }
+  .list-details li.time:before {
+    content: "\e8b5"; }
+  .list-details li:last-child {
+    margin-bottom: 0; }
 
 h2.has-bg.reveal:before {
   transition: 2s all ease-in-out;
@@ -6548,7 +6571,6 @@ section.section {
       border-color: #2D3632; }
 
 .event-detail {
-  border: 1px solid red;
   margin: 3rem 0 0 0; }
   @media screen and (min-width: 1024px) {
     .event-detail .columns {
@@ -6557,9 +6579,24 @@ section.section {
     line-height: 1.1;
     color: #2D3632;
     font-size: clamp(24px, 3vw, 50px);
-    text-align: left; }
+    text-align: left;
+    margin-bottom: 2rem; }
   .event-detail .category {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-weight: 600; }
+  .event-detail .description {
+    margin-top: 1rem; }
+    .event-detail .description p {
+      margin-bottom: 1rem; }
+      @media screen and (min-width: 1024px) {
+        .event-detail .description p {
+          font-size: 18px;
+          line-height: 1.4; } }
+  .event-detail .buttons {
+    margin-top: 2rem; }
+  .event-detail .event-image img {
+    border-radius: 1rem; }
 
 .banner-info {
   background-image: url("../images/banner-info-sm.jpg");

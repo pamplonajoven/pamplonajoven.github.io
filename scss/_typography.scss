@@ -139,8 +139,9 @@ h4{
 	}
 }
 
-.strong,strong,b{
+.strong,strong,b, .is-bold{
 	font-weight: $bold;
+	display: contents;
 }
 
 .text-colophon{
@@ -262,6 +263,43 @@ h4{
 					color: $dark;
 				}
 			}
+		}
+	}
+}
+
+.list-details{
+	li{
+		display: flex;
+		align-items: center;
+		margin-bottom: .5rem;
+		border-bottom: 1px solid $gray;
+		padding-bottom: .5rem;
+		a{
+			color: $dark;
+		}
+		&:before{
+			font-family: 'Material Symbols Outlined';
+			font-size: 22px;
+			color: $dark;
+			margin-right: .3rem;
+		}
+		&.place{
+			&:before{
+				content: "\e55e";
+			}
+		}
+		&.date{
+			&:before{
+				content: "\e878";
+			}
+		}
+		&.time{
+			&:before{
+				content: "\e8b5";
+			}
+		}
+		&:last-child{
+			margin-bottom: 0;
 		}
 	}
 }
