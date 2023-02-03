@@ -5783,7 +5783,7 @@ body {
   font-family: "Inter", sans-serif;
   color: #2D3632;
   font-size: 16px;
-  line-height: 1.2; }
+  line-height: 1.3; }
 
 a {
   transition: all 0.3s ease; }
@@ -5890,12 +5890,6 @@ h4 {
 .subtitle {
   font-weight: 700;
   color: #999999; }
-
-p.h3 {
-  font-size: clamp(18px, 2vw, 22px);
-  font-family: "VastagoGrotesk-Black", Georgia, Times, "Times New Roman", serif;
-  color: #00CD5F;
-  line-height: 1.1; }
 
 .title-block {
   display: block;
@@ -6878,8 +6872,17 @@ button, .button {
       margin-bottom: -1px; } }
   .ejeplan h3 {
     margin-bottom: 1rem; }
-  .ejeplan p {
+  .ejeplan p:not(:last-of-type) {
     margin-bottom: 1rem; }
+  .ejeplan .reto {
+    background-color: rgba(0, 205, 95, 0.2);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    height: 100%; }
+    .ejeplan .reto p.h3 {
+      font-size: 18px;
+      font-family: "VastagoGrotesk-Black", Georgia, Times, "Times New Roman", serif;
+      line-height: 1.1; }
   .ejeplan .column-divider {
     height: 100%;
     display: flex;
@@ -6887,7 +6890,7 @@ button, .button {
     align-items: center; }
     .ejeplan .column-divider .icon-divider {
       font-size: 70px;
-      color: #DDDDDD; }
+      color: rgba(0, 205, 95, 0.2); }
 
 .box {
   border-radius: 1rem;

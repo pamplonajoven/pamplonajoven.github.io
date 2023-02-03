@@ -175,8 +175,19 @@
     h3{
         margin-bottom: 1rem;
     }
-    p{
+    p:not(:last-of-type){
         margin-bottom: 1rem;
+    }
+    .reto{
+        background-color: rgba($secondary, .2);
+        padding: 1.5rem;
+        @include radius;
+        height: 100%;
+        p.h3{
+            font-size: 18px;
+            font-family: $title-family;
+            line-height: 1.1;
+        }
     }
     //Column divider
     .column-divider{
@@ -186,7 +197,7 @@
         align-items: center;
         .icon-divider{
             font-size: 70px;
-            color: $gray-light;
+            color: rgba($secondary, .2);
         }
     }
 }
