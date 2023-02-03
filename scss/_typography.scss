@@ -176,6 +176,13 @@ h4{
 	color: $gray;
 }
 
+p.h3{
+	@include fs-title3;
+	font-family: $title-family;
+	color: $secondary;
+	line-height: 1.1;
+}
+
 
 //Blocks
 .title-block{

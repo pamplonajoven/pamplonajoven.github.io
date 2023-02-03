@@ -155,6 +155,42 @@
     }
 }
 
+//Eje plan card
+.ejeplan{
+    @include radius;
+    padding: 1.5rem;
+    border: 1px solid $gray;
+    background-color: rgba($white, .7);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: $dark;
+    margin-bottom: 1.5rem;
+    @include tablet{
+        padding: 2rem;
+    }
+    @include desktop{
+        margin-bottom: -1px;
+    }
+    h3{
+        margin-bottom: 1rem;
+    }
+    p{
+        margin-bottom: 1rem;
+    }
+    //Column divider
+    .column-divider{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .icon-divider{
+            font-size: 70px;
+            color: $gray-light;
+        }
+    }
+}
+
 //Box
 .box{
     @include radius;

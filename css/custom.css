@@ -5891,6 +5891,12 @@ h4 {
   font-weight: 700;
   color: #999999; }
 
+p.h3 {
+  font-size: clamp(18px, 2vw, 22px);
+  font-family: "VastagoGrotesk-Black", Georgia, Times, "Times New Roman", serif;
+  color: #00CD5F;
+  line-height: 1.1; }
+
 .title-block {
   display: block;
   margin: 2.5rem 0; }
@@ -6852,6 +6858,35 @@ button, .button {
         background-color: #FEFF00; }
       .subprograma .buttons.buttons-card .button::before {
         font-size: 16px; }
+
+.ejeplan {
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 1px solid #999999;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: #2D3632;
+  margin-bottom: 1.5rem; }
+  @media screen and (min-width: 769px), print {
+    .ejeplan {
+      padding: 2rem; } }
+  @media screen and (min-width: 1024px) {
+    .ejeplan {
+      margin-bottom: -1px; } }
+  .ejeplan h3 {
+    margin-bottom: 1rem; }
+  .ejeplan p {
+    margin-bottom: 1rem; }
+  .ejeplan .column-divider {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .ejeplan .column-divider .icon-divider {
+      font-size: 70px;
+      color: #DDDDDD; }
 
 .box {
   border-radius: 1rem;
