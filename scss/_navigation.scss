@@ -183,9 +183,6 @@
             font-size: $small;
             display: flex;
             align-items: center;
-            @include desktop{
-                font-size: $regular;
-            }
             color: $primary;
             a{
                 color: $white;
@@ -212,6 +209,7 @@
         flex-direction: row;
         gap: 1rem;
         li{
+            font-size: $small;
             a{
                 color: $white;
                 &:hover, &:active{

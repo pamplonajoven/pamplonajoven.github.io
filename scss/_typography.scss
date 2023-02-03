@@ -25,7 +25,7 @@
 }
 
 @mixin fs-regular{
-	font-size: clamp(15px, 1vw, 16px);
+	font-size: 16px;
 }
 
 @mixin fs-title1{
@@ -139,6 +139,25 @@ h4{
 	}
 }
 
+.lead-block{
+	margin-top: 3.5rem;
+	p{
+		font-size: 16px;
+		font-weight: $semi-bold;
+		@include tablet{
+			font-size: 18px;
+		}
+		@include desktop{
+			font-size: 20px;
+		}
+		text-align: center;
+		margin: 0 auto 1.5rem auto;
+		@include tablet{
+			width: 50ch;
+		}
+	}
+}
+
 .strong,strong,b, .is-bold{
 	font-weight: $bold;
 	display: contents;
@@ -152,17 +171,9 @@ h4{
 	}
 }
 
-.ladillo{
-	background-color: $primary;
-	@include radius;
-	font-size: 22px;
-	height: 100%;
-	padding: 1.5rem;
-	display: flex;
-	justify-content: center;
-	@include desktop{
-		padding: 3rem;
-	}
+.subtitle{
+	font-weight: $bold;
+	color: $gray;
 }
 
 

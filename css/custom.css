@@ -5782,7 +5782,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 body {
   font-family: "Inter", sans-serif;
   color: #2D3632;
-  font-size: clamp(15px, 1vw, 16px);
+  font-size: 16px;
   line-height: 1.2; }
 
 a {
@@ -5859,6 +5859,23 @@ h4 {
     padding-top: 3rem;
     padding-bottom: 3rem; }
 
+.lead-block {
+  margin-top: 3.5rem; }
+  .lead-block p {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 auto 1.5rem auto; }
+    @media screen and (min-width: 769px), print {
+      .lead-block p {
+        font-size: 18px; } }
+    @media screen and (min-width: 1024px) {
+      .lead-block p {
+        font-size: 20px; } }
+    @media screen and (min-width: 769px), print {
+      .lead-block p {
+        width: 50ch; } }
+
 .strong, strong, b, .is-bold {
   font-weight: 700;
   display: contents; }
@@ -5870,17 +5887,9 @@ h4 {
     .text-colophon {
       width: 60ch; } }
 
-.ladillo {
-  background-color: #FEFF00;
-  border-radius: 1rem;
-  font-size: 22px;
-  height: 100%;
-  padding: 1.5rem;
-  display: flex;
-  justify-content: center; }
-  @media screen and (min-width: 1024px) {
-    .ladillo {
-      padding: 3rem; } }
+.subtitle {
+  font-weight: 700;
+  color: #999999; }
 
 .title-block {
   display: block;
@@ -6335,7 +6344,7 @@ section.section {
     .navbar.navbar-custom .navbar-dropdown .navbar-item.dropdown-item {
       border: none;
       border-radius: 0;
-      font-size: clamp(15px, 1vw, 16px);
+      font-size: 16px;
       display: flex;
       background-color: transparent;
       padding: .5rem 1rem; }
@@ -6403,9 +6412,6 @@ section.section {
     display: flex;
     align-items: center;
     color: #FEFF00; }
-    @media screen and (min-width: 1024px) {
-      .breadcrumbs ul li {
-        font-size: 16px; } }
     .breadcrumbs ul li a {
       color: #ffffff; }
     .breadcrumbs ul li:not(:last-child):after {
@@ -6424,12 +6430,14 @@ section.section {
     display: flex;
     flex-direction: row;
     gap: 1rem; }
-    .anchors ul li a {
-      color: #ffffff; }
-      .anchors ul li a:hover, .anchors ul li a:active {
+    .anchors ul li {
+      font-size: 14px; }
+      .anchors ul li a {
+        color: #ffffff; }
+        .anchors ul li a:hover, .anchors ul li a:active {
+          color: #FEFF00; }
+      .anchors ul li.is-active a {
         color: #FEFF00; }
-    .anchors ul li.is-active a {
-      color: #FEFF00; }
 
 .anchors-top {
   position: fixed;
@@ -6678,7 +6686,7 @@ button, .button {
   font-weight: 600;
   text-transform: uppercase;
   border-radius: 100px;
-  font-size: clamp(15px, 1vw, 16px);
+  font-size: 16px;
   line-height: initial;
   padding: 2rem;
   border: 1px solid #2D3632;
