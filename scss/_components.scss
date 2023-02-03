@@ -79,6 +79,7 @@
 
 //Event detail
 .event-detail{
+    position: relative;
     .columns{
         @include desktop{
             flex-direction: row-reverse;

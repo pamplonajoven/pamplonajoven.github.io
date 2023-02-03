@@ -6585,6 +6585,7 @@ section.section {
       border-color: #2D3632; }
 
 .event-detail {
+  position: relative;
   margin: 3rem 0 0 0; }
   @media screen and (min-width: 1024px) {
     .event-detail .columns {
