@@ -5889,7 +5889,7 @@ h4 {
 
 .subtitle {
   font-weight: 700;
-  color: #999999; }
+  color: #00CD5F; }
 
 .title-block {
   display: block;
@@ -6891,6 +6891,28 @@ button, .button {
     .ejeplan .column-divider .icon-divider {
       font-size: 70px;
       color: rgba(0, 205, 95, 0.2); }
+
+.principio {
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 1px solid #999999;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: #2D3632;
+  height: 100%;
+  overflow: hidden; }
+  @media screen and (min-width: 769px), print {
+    .principio {
+      padding: 2rem; } }
+  @media screen and (min-width: 1024px) {
+    .principio {
+      margin-bottom: -1px;
+      margin-right: -1px; } }
+  .principio h3 {
+    margin-bottom: 1rem; }
+  .principio p:not(:last-of-type) {
+    margin-bottom: 1rem; }
 
 .box {
   border-radius: 1rem;
