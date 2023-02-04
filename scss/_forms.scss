@@ -9,14 +9,22 @@ outline: none;
 .control{
     input,textarea, select{
         box-shadow: none;
+        border-radius: 9px;
+        border-color: $gray;
         &:hover, &:focus, &:active{
-            border-color: $primary;
+            border-color: $dark;
+            background-color: $primary;
             @include box-shadow;
             &::placeholder{
                 color: $dark;
             }
         }
     }
+}
+
+label.label{
+    font-weight: $semi-bold;
+    margin-bottom: .4rem;
 }
 
 
@@ -56,9 +64,55 @@ form.is-dark{
 	}
 }
 
+//Check-radio
+.is-checkradio[type="radio"] + label::before, .is-checkradio[type="radio"] + label:before, .is-checkradio[type="checkbox"] + label::before, .is-checkradio[type="checkbox"] + label:before{
+    border-color: $gray;
+    background-color: $white;
+}
+.is-checkradio[type="checkbox"] + label::before, .is-checkradio[type="checkbox"] + label:before{
+    border-radius: .3rem;
+}
+.is-checkradio[type="checkbox"]:checked + label::before, .is-checkradio[type="checkbox"]:checked + label:before {
+    background-color: $primary;
+    border-color:$dark;
+}
+.is-checkradio[type="checkbox"] + label::after, .is-checkradio[type="checkbox"] + label:after{
+    border-color: $dark;
+}
+.is-checkradio[type="radio"]:hover:not([disabled]) + label::before, .is-checkradio[type="radio"]:hover:not([disabled]) + label:before, .is-checkradio[type="checkbox"]:hover:not([disabled]) + label::before, .is-checkradio[type="checkbox"]:hover:not([disabled]) + label:before{
+    border-color: $dark !important;
+}
+.is-checkradio[type="radio"] + label, .is-checkradio[type="checkbox"] + label{
+    padding-top: .3rem;
+}
+
 //Form agenda
 .form-events{
     input,.select{
         border-color: $white;
     }
 }
+
+
+//Form Clubes
+.form-clubes{
+    margin-top: 3rem;
+    h4{
+        margin: 2rem 0 2rem 0;
+    }
+    .help{
+        display: none;
+        margin-top: .8rem;
+        padding-left: 2.5rem;
+        @include desktop{
+            display: block;
+        }
+    }
+    .field.field-checkbox{
+        margin-bottom: 2rem;
+    }
+    .is-checkradio[type="checkbox"].is-medium + label{
+        font-weight: $semi-bold;
+    }
+}
+
