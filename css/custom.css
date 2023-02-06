@@ -6189,6 +6189,26 @@ footer.footer {
     padding: 0;
     margin-bottom: -1px; } }
 
+article.article {
+  color: #2D3632;
+  text-align: left;
+  padding-top: 3rem; }
+  article.article h1 {
+    font-size: clamp(24px, 3vw, 50px);
+    color: #2D3632;
+    text-align: left;
+    padding: 0;
+    margin-bottom: 1rem; }
+  article.article h2, article.article h3 {
+    font-size: clamp(18px, 2vw, 22px);
+    color: #2D3632;
+    text-align: left;
+    padding: 0;
+    margin-bottom: 1rem;
+    margin-top: 3rem; }
+  article.article p, article.article ul {
+    margin-bottom: 1rem; }
+
 section.section {
   background-color: #ffffff;
   padding: 1rem;

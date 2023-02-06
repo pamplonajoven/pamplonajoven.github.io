@@ -201,3 +201,28 @@ footer.footer{
 		}
 	}
 }
+
+//Article
+article.article{
+	color: $dark;
+	text-align: left;
+	padding-top: 3rem;
+	h1{
+		@include fs-title2;
+		color: $dark;
+		text-align: left;
+		padding: 0;
+		margin-bottom: 1rem;
+	}
+	h2, h3{
+		@include fs-title3;
+		color: $dark;
+		text-align: left;
+		padding: 0;
+		margin-bottom: 1rem;
+		margin-top: 3rem;
+	}
+	p, ul{
+		margin-bottom: 1rem;
+	}
+}
