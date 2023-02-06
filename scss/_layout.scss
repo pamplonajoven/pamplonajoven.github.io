@@ -207,12 +207,14 @@ article.article{
 	color: $dark;
 	text-align: left;
 	padding-top: 3rem;
+	padding-bottom: 3rem;
 	h1{
 		@include fs-title2;
 		color: $dark;
 		text-align: left;
 		padding: 0;
 		margin-bottom: 1rem;
+		margin-top: 3rem
 	}
 	h2, h3{
 		@include fs-title3;
@@ -224,5 +226,14 @@ article.article{
 	}
 	p, ul{
 		margin-bottom: 1rem;
+		line-height: 1.4;
+	}
+	.breadcrumbs{
+		li{
+			color: $dark;
+			a{
+				color: $secondary;
+			}
+		}
 	}
 }
