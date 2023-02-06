@@ -7983,7 +7983,8 @@ label a {
     padding-left: 2.5rem; }
     @media screen and (min-width: 1024px) {
       .form-clubes .help {
-        display: block; } }
+        display: block;
+        font-size: 13px; } }
   .form-clubes .field.field-checkbox {
     margin-bottom: 2rem; }
   .form-clubes .is-checkradio[type="checkbox"].is-medium + label {

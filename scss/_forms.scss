@@ -114,6 +114,7 @@ label a{
         padding-left: 2.5rem;
         @include desktop{
             display: block;
+            font-size: 13px;
         }
     }
     .field.field-checkbox{
