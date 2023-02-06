@@ -83,7 +83,15 @@ form.is-dark{
     border-color: $dark !important;
 }
 .is-checkradio[type="radio"] + label, .is-checkradio[type="checkbox"] + label{
-    padding-top: .3rem;
+    padding-top: .2rem;
+}
+.is-checkradio[type="checkbox"].is-medium + label {
+    padding-top: 0.3rem;
+}
+
+label a{
+    color: $dark;
+    text-decoration: underline;
 }
 
 //Form agenda

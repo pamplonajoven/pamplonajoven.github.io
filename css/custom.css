@@ -7928,7 +7928,14 @@ form.is-dark {
 
 .is-checkradio[type="radio"] + label,
 .is-checkradio[type="checkbox"] + label {
-  padding-top: .3rem; }
+  padding-top: .2rem; }
+
+.is-checkradio[type="checkbox"].is-medium + label {
+  padding-top: 0.3rem; }
+
+label a {
+  color: #2D3632;
+  text-decoration: underline; }
 
 .form-events input, .form-events .select {
   border-color: #ffffff; }
