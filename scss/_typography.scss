@@ -216,6 +216,12 @@ h4{
 		&:last-child{
 			margin-bottom: 0;
 		}
+		ul{
+			margin: .5rem 0 0 1.5rem;
+			li{
+				list-style: circle;
+			}
+		}
 	}
 }
 
@@ -311,6 +317,50 @@ h4{
 		}
 		&:last-child{
 			margin-bottom: 0;
+		}
+	}
+}
+
+//Article
+article.article{
+	color: $dark;
+	text-align: left;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	h1{
+		@include fs-title2;
+		color: $dark;
+		text-align: left;
+		padding: 0;
+		margin-bottom: 1rem;
+		margin-top: 3rem
+	}
+	h2{
+		@include fs-title3;
+		color: $dark;
+		text-align: left;
+		padding: 0;
+		margin-bottom: 1rem;
+		margin-top: 3rem;
+	}
+	h3{
+		font-size: 18px;
+		color: $dark;
+		text-align: left;
+		padding: 0;
+		margin-bottom: 1rem;
+		margin-top: 2rem;
+	}
+	p, ul{
+		margin-bottom: 1rem;
+		line-height: 1.4;
+	}
+	.breadcrumbs{
+		li{
+			color: $dark;
+			a{
+				color: $secondary;
+			}
 		}
 	}
 }
