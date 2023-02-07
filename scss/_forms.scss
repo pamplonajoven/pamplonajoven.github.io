@@ -125,3 +125,17 @@ label a{
     }
 }
 
+//Search box
+
+.field.has-addons.field-search{
+    width: 100%;
+    justify-content: center;
+    .button{
+        padding: 1rem 2rem;
+        height: 100%;
+        transition: none;
+        &:hover, &:active, &.is-active{
+            transform: none;
+        }
+    }
+}

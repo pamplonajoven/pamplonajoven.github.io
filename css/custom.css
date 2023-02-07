@@ -8140,6 +8140,16 @@ label a {
   .form-clubes .is-checkradio[type="checkbox"].is-medium + label {
     font-weight: 600; }
 
+.field.has-addons.field-search {
+  width: 100%;
+  justify-content: center; }
+  .field.has-addons.field-search .button {
+    padding: 1rem 2rem;
+    height: 100%;
+    transition: none; }
+    .field.has-addons.field-search .button:hover, .field.has-addons.field-search .button:active, .field.has-addons.field-search .button.is-active {
+      transform: none; }
+
 .splide__slide {
   position: relative;
   background-color: #000000;
