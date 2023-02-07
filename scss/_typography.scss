@@ -323,6 +323,8 @@ h4{
 
 //Article
 article.article{
+	padding-left: 1rem;
+	padding-right: 1rem;
 	color: $dark;
 	text-align: left;
 	padding-top: 3rem;
@@ -362,5 +364,14 @@ article.article{
 				color: $secondary;
 			}
 		}
+	}
+}
+
+//Tables
+
+.table.is-cookies{
+	font-size: 14px;
+	th{
+		text-transform: capitalize;
 	}
 }
