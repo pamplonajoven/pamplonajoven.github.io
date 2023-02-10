@@ -6930,7 +6930,8 @@ button, .button {
       .evento .card-wrapper .card-header img {
         aspect-ratio: 14 / 9;
         object-fit: cover;
-        border-radius: .5rem; }
+        border-radius: .5rem;
+        min-width: 100%; }
     .evento .card-wrapper .card-content {
       flex: 1;
       margin-top: 1rem; }
