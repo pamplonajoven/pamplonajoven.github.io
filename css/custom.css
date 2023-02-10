@@ -7015,6 +7015,11 @@ button.input[type="submit"] {
         background-color: #FEFF00; }
       .programa .buttons.buttons-card .button::before {
         font-size: 16px; }
+      @media only screen and (max-width: 595px) {
+        .programa .buttons.buttons-card .button {
+          font-size: 12px;
+          white-space: break-spaces;
+          text-align: left; } }
 
 .subprograma {
   border-radius: 1rem;

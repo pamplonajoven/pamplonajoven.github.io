@@ -111,6 +111,11 @@
             &::before{
                 font-size: 16px;
             }
+            @media only screen and (max-width: 595px) {
+                font-size: 12px;
+                white-space: break-spaces;
+                text-align: left;
+            }
         }
     }
 }
