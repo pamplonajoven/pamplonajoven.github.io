@@ -48,3 +48,18 @@ button,.button{
         }
     }
 }
+
+button.input[type="submit"]{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $dark;
+    color: $dark;
+    border-radius: 100px;
+    &:hover, &:active{
+        background-color: $primary;
+        border: 1px solid $black;
+        color: $black;
+    }
+}

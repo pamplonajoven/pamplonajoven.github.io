@@ -6784,6 +6784,9 @@ section.section {
   .event-detail .event-image img {
     border-radius: 1rem; }
 
+.addtoany_shortcode {
+  margin-top: 1rem; }
+
 .banner-info {
   background-image: url("../images/banner-info-sm.jpg");
   background-repeat: no-repeat;
@@ -6905,6 +6908,19 @@ button, .button {
     color: #2D3632;
     margin-right: .3rem;
     content: "\e158"; }
+
+button.input[type="submit"] {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #2D3632;
+  color: #2D3632;
+  border-radius: 100px; }
+  button.input[type="submit"]:hover, button.input[type="submit"]:active {
+    background-color: #FEFF00;
+    border: 1px solid #000000;
+    color: #000000; }
 
 .evento {
   border-radius: 1rem;
