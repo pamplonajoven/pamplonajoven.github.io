@@ -6947,7 +6947,8 @@ button.input[type="submit"] {
         aspect-ratio: 14 / 9;
         object-fit: cover;
         border-radius: .5rem;
-        min-width: 100%; }
+        min-width: 100%;
+        width: 100%; }
     .evento .card-wrapper .card-content {
       flex: 1;
       margin-top: 1rem; }
