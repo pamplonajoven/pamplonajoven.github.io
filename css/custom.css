@@ -7018,9 +7018,7 @@ button.input[type="submit"] {
         font-size: 16px; }
       @media only screen and (max-width: 595px) {
         .programa .buttons.buttons-card .button {
-          font-size: 12px;
-          white-space: break-spaces;
-          text-align: left; } }
+          font-size: 12px; } }
 
 .subprograma {
   border-radius: 1rem;
