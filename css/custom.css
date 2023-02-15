@@ -8191,7 +8191,7 @@ label a {
         min-height: none; } }
     @media screen and (min-width: 1024px) {
       .splide__slide .slide-image img {
-        aspect-ratio: 26 / 9; } }
+        aspect-ratio: 22 / 9; } }
   .splide__slide .slide-image.image-only img {
     opacity: 1; }
   .splide__slide .slide-copy {
