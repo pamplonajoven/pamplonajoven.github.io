@@ -375,10 +375,26 @@ article.article{
 }
 
 //Tables
-
 .table.is-cookies{
 	font-size: 14px;
 	th{
 		text-transform: capitalize;
+	}
+}
+
+//Notifications
+.notification{
+	@include radius;
+	padding: 2rem;
+	border: 1px solid $dark;
+	margin: 2rem auto;
+	width: 100%;
+	text-align: center;
+	font-weight: $semi-bold;
+	&.is-success{
+		color: green;
+	}
+	&.is-error{
+		color: red;
 	}
 }
