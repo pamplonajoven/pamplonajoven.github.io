@@ -59,12 +59,22 @@
             background-color: $primary;
             @include box-shadow;
             border-color: $dark;
+            h3{
+                color: $dark;
+            }
+            .icon{
+                color: $dark;
+            }
         }
         &.is-active{
             background-color: $white;
             @include box-shadow;
             border-color: $dark;
+            h3{
+                color: $dark;
+            }
             .icon{
+                color: $dark;
                 background-color: $white;
             }
             .accordion-content{
@@ -72,6 +82,88 @@
             }
             &:hover, &:active{
                 border-color: $dark;
+            }
+        }
+    }
+}
+
+//Accordions for Cursos
+
+.accordion{
+    &.is-cultura{
+        .date{
+            color: $color-cultura;
+        }
+        &:not(.is-active){
+            background-color: $color-cultura;
+            h3, .icon{
+                color: $white;
+            }
+        }
+    }
+    &.is-estetica{
+        .date{
+            color: $color-estetica;
+        }
+        &:not(.is-active){
+            background-color: $color-estetica;
+            h3, .icon{
+                color: $white;
+            }
+        }
+    }
+    &.is-deporte{
+        .date{
+            color: $color-deporte;
+        }
+        &:not(.is-active){
+            background-color: $color-deporte;
+            h3, .icon{
+                color: $white;
+            }
+        }
+    }
+    &.is-danza{
+        .date{
+            color: $color-danza;
+        }
+        &:not(.is-active){
+            background-color: $color-danza;
+            h3, .icon{
+                color: $white;
+            }
+        }
+    }
+    &.is-informatica{
+        .date{
+            color: $color-informatica;
+        }
+        &:not(.is-active){
+            background-color: $color-informatica;
+            h3, .icon{
+                color: $dark;
+            }
+        }
+    }
+    .accordion-content{
+        .curso{
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid $gray;
+            p.date{
+                margin-bottom: .25rem;
+                font-size: $small;
+                font-weight: $semi-bold;
+            }
+            p.day-time{
+                margin-bottom: .25rem;
+            }
+           p.age{
+                margin-bottom: 0;
+            }
+            h4{
+                text-transform: none;
+                margin-bottom: .25rem;
             }
         }
     }

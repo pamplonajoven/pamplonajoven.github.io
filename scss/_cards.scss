@@ -264,12 +264,16 @@
         margin-top: .5rem;
         margin-bottom: 0;
     }
+    p.is-first{
+        display: block;
+        margin-top: 2rem;
+    }
+    @include desktop{
+        margin-right: -1px;
+    }
     &.is-winter{
         h3{
             background-color: $blue;
-        }
-        @include desktop{
-            margin-right: -1px;
         }
     }
     &.is-summer{

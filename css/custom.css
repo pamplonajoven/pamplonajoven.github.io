@@ -5919,6 +5919,8 @@ body {
 
 a {
   transition: all 0.3s ease; }
+  a.is-dark {
+    color: #2D3632; }
 
 h1 {
   font-size: clamp(30px, 4vw, 70px);
@@ -6022,6 +6024,10 @@ h4 {
 .subtitle {
   font-weight: 700;
   color: #00CD5F; }
+
+.is-danger {
+  color: #e32016;
+  font-weight: 600; }
 
 .title-block {
   display: block;
@@ -6359,8 +6365,14 @@ footer.footer {
   .d-flex.space-between {
     justify-content: space-between; }
 
+.mt-1 {
+  margin-top: 1rem !important; }
+
 .mt-2 {
   margin-top: 2rem !important; }
+
+.mt-3 {
+  margin-top: 3rem !important; }
 
 @media screen and (min-width: 1024px) {
   .columns.is-0-desktop .column {
@@ -6738,18 +6750,81 @@ section.section {
     -moz-box-shadow: 0px 0px 22px -4px rgba(45, 54, 50, 0.25);
     box-shadow: 0px 0px 22px -4px rgba(45, 54, 50, 0.25);
     border-color: #2D3632; }
+    .accordions .accordion:hover h3, .accordions .accordion:active h3 {
+      color: #2D3632; }
+    .accordions .accordion:hover .icon, .accordions .accordion:active .icon {
+      color: #2D3632; }
   .accordions .accordion.is-active {
     background-color: #ffffff;
     -webkit-box-shadow: 0px 0px 22px -4px rgba(45, 54, 50, 0.25);
     -moz-box-shadow: 0px 0px 22px -4px rgba(45, 54, 50, 0.25);
     box-shadow: 0px 0px 22px -4px rgba(45, 54, 50, 0.25);
     border-color: #2D3632; }
+    .accordions .accordion.is-active h3 {
+      color: #2D3632; }
     .accordions .accordion.is-active .icon {
+      color: #2D3632;
       background-color: #ffffff; }
     .accordions .accordion.is-active .accordion-content {
       display: block; }
     .accordions .accordion.is-active:hover, .accordions .accordion.is-active:active {
       border-color: #2D3632; }
+
+.accordion.is-cultura .date {
+  color: #ED4A4D; }
+
+.accordion.is-cultura:not(.is-active) {
+  background-color: #ED4A4D; }
+  .accordion.is-cultura:not(.is-active) h3, .accordion.is-cultura:not(.is-active) .icon {
+    color: #ffffff; }
+
+.accordion.is-estetica .date {
+  color: #C257FF; }
+
+.accordion.is-estetica:not(.is-active) {
+  background-color: #C257FF; }
+  .accordion.is-estetica:not(.is-active) h3, .accordion.is-estetica:not(.is-active) .icon {
+    color: #ffffff; }
+
+.accordion.is-deporte .date {
+  color: #4BB05A; }
+
+.accordion.is-deporte:not(.is-active) {
+  background-color: #4BB05A; }
+  .accordion.is-deporte:not(.is-active) h3, .accordion.is-deporte:not(.is-active) .icon {
+    color: #ffffff; }
+
+.accordion.is-danza .date {
+  color: #03BFFA; }
+
+.accordion.is-danza:not(.is-active) {
+  background-color: #03BFFA; }
+  .accordion.is-danza:not(.is-active) h3, .accordion.is-danza:not(.is-active) .icon {
+    color: #ffffff; }
+
+.accordion.is-informatica .date {
+  color: #FFED3B; }
+
+.accordion.is-informatica:not(.is-active) {
+  background-color: #FFED3B; }
+  .accordion.is-informatica:not(.is-active) h3, .accordion.is-informatica:not(.is-active) .icon {
+    color: #2D3632; }
+
+.accordion .accordion-content .curso {
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #999999; }
+  .accordion .accordion-content .curso p.date {
+    margin-bottom: .25rem;
+    font-size: 14px;
+    font-weight: 600; }
+  .accordion .accordion-content .curso p.day-time {
+    margin-bottom: .25rem; }
+  .accordion .accordion-content .curso p.age {
+    margin-bottom: 0; }
+  .accordion .accordion-content .curso h4 {
+    text-transform: none;
+    margin-bottom: .25rem; }
 
 .event-detail {
   position: relative;
@@ -7132,11 +7207,14 @@ button.input[type="submit"] {
   .box ul, .box p {
     margin-top: .5rem;
     margin-bottom: 0; }
+  .box p.is-first {
+    display: block;
+    margin-top: 2rem; }
+  @media screen and (min-width: 1024px) {
+    .box {
+      margin-right: -1px; } }
   .box.is-winter h3 {
     background-color: #1CA5D6; }
-  @media screen and (min-width: 1024px) {
-    .box.is-winter {
-      margin-right: -1px; } }
   .box.is-summer h3 {
     background-color: #F2E25F;
     color: #2D3632; }
