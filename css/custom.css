@@ -6208,7 +6208,8 @@ progress::-moz-progress-bar {
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  scroll-padding-top: 9rem; }
 
 body {
   background-color: #ffffff; }
@@ -6664,11 +6665,6 @@ section.section {
     .anchors-top ul li.is-active a {
       color: #2D3632; }
 
-.is-anchored {
-  display: block;
-  padding-top: 7rem;
-  margin-top: -7rem; }
-
 .tabs.is-toggle li a {
   border-radius: 100px; }
 
@@ -7032,7 +7028,8 @@ button.input[type="submit"] {
   margin-bottom: 1.5rem; }
   @media screen and (min-width: 769px), print {
     .subprograma {
-      padding: 2rem; } }
+      padding: 2rem;
+      scroll-padding-top: 7rem; } }
   @media screen and (min-width: 1024px) {
     .subprograma {
       margin-bottom: -1px; } }
