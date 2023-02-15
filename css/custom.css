@@ -6228,7 +6228,7 @@ progress::-moz-progress-bar {
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
-  scroll-padding-top: 9rem; }
+  scroll-padding-top: 9.5rem; }
 
 body {
   background-color: #ffffff; }
