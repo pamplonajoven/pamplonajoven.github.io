@@ -6837,7 +6837,8 @@ section.section {
     margin-bottom: 0; }
   .accordion .accordion-content .curso h4 {
     text-transform: none;
-    margin-bottom: .25rem; }
+    margin-bottom: .25rem;
+    font-size: 18px; }
 
 .event-detail {
   position: relative;
