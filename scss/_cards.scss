@@ -26,7 +26,9 @@
                 border-radius: .5rem;
                 min-width: 100%;
                 width: 100%;
-                min-width: 287px;
+                @include desktop{
+                    min-width: 287px;
+                }
             }
         }
         .card-content{
