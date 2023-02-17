@@ -6522,7 +6522,8 @@ section.section {
     .navbar.navbar-custom .navbar-brand .navbar-item.is-logo {
       transition: transform .5s; }
       .navbar.navbar-custom .navbar-brand .navbar-item.is-logo img {
-        max-height: 4.5rem; }
+        max-height: 4.5rem;
+        min-width: 140px; }
       .navbar.navbar-custom .navbar-brand .navbar-item.is-logo:hover, .navbar.navbar-custom .navbar-brand .navbar-item.is-logo:active, .navbar.navbar-custom .navbar-brand .navbar-item.is-logo.is-active {
         transform: rotate(2deg); }
     .navbar.navbar-custom .navbar-brand .navbar-burger {
