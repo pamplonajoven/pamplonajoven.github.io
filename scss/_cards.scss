@@ -8,6 +8,7 @@
     display: flex;
     color: $dark;
     height: 100%;
+    width: 100%;
     @include tablet{
         padding: 1.5rem 1.5rem 1rem 1.5rem;
     }
@@ -17,6 +18,7 @@
     .card-wrapper{
         display: flex;
         flex-direction: column;
+        width: 100%;
         .card-header{
             position: relative;
             transition: transform .4s;

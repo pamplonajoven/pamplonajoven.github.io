@@ -7018,7 +7018,8 @@ button.input[type="submit"] {
   position: relative;
   display: flex;
   color: #2D3632;
-  height: 100%; }
+  height: 100%;
+  width: 100%; }
   @media screen and (min-width: 769px), print {
     .evento {
       padding: 1.5rem 1.5rem 1rem 1.5rem; } }
@@ -7027,7 +7028,8 @@ button.input[type="submit"] {
       margin-right: -1px; } }
   .evento .card-wrapper {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    width: 100%; }
     .evento .card-wrapper .card-header {
       position: relative;
       transition: transform .4s; }
