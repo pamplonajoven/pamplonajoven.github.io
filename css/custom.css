@@ -8234,8 +8234,13 @@ label a {
   color: #2D3632;
   text-decoration: underline; }
 
-.form-events input, .form-events .select {
-  border-color: #ffffff; }
+.form-events {
+  margin-top: 1rem; }
+  @media screen and (min-width: 1024px) {
+    .form-events {
+      margin-top: 0; } }
+  .form-events input, .form-events .select {
+    border-color: #ffffff; }
 
 .form-clubes {
   margin-top: 3rem; }

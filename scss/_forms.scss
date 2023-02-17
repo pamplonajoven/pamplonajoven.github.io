@@ -96,6 +96,10 @@ label a{
 
 //Form agenda
 .form-events{
+    margin-top: 1rem;
+    @include desktop{
+        margin-top: 0;
+    }
     input,.select{
         border-color: $white;
     }
