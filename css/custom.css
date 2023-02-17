@@ -6612,10 +6612,13 @@ section.section {
   flex-direction: row;
   gap: .2rem; }
   .breadcrumbs ul li {
-    font-size: 14px;
+    font-size: 12px;
     display: flex;
     align-items: center;
     color: #FEFF00; }
+    @media screen and (min-width: 769px), print {
+      .breadcrumbs ul li {
+        font-size: 14px; } }
     .breadcrumbs ul li a {
       color: #ffffff; }
     .breadcrumbs ul li:not(:last-child):after {

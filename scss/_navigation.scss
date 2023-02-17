@@ -180,10 +180,13 @@
         flex-direction: row;
         gap: .2rem;
         li{
-            font-size: $small;
+            font-size: $tiny;
             display: flex;
             align-items: center;
             color: $primary;
+            @include tablet{
+                font-size: $small;
+            }
             a{
                 color: $white;
             }
