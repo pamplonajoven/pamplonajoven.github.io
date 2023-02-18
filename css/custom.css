@@ -7040,9 +7040,6 @@ button.input[type="submit"] {
         border-radius: .5rem;
         min-width: 100%;
         width: 100%; }
-        @media screen and (min-width: 1024px) {
-          .evento .card-wrapper .card-header img {
-            min-width: 287px; } }
     .evento .card-wrapper .card-content {
       flex: 1;
       margin-top: 1rem; }
