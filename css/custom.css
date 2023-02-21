@@ -6502,7 +6502,8 @@ section.section {
       position: fixed;
       width: 100%;
       inset: 0;
-      top: 65px; }
+      top: 63px;
+      border-radius: 1rem; }
       .navbar.navbar-custom .navbar-menu.is-active a.navbar-item, .navbar.navbar-custom .navbar-menu.is-active a.navbar-link {
         padding-top: .6rem;
         padding-bottom: .6rem;
@@ -6531,9 +6532,10 @@ section.section {
             max-height: 4.5rem; } }
       .navbar.navbar-custom .navbar-brand .navbar-item.is-logo:hover, .navbar.navbar-custom .navbar-brand .navbar-item.is-logo:active, .navbar.navbar-custom .navbar-brand .navbar-item.is-logo.is-active {
         transform: rotate(2deg); }
-      .navbar.navbar-custom .navbar-brand .navbar-item.is-logo img {
-        max-height: 3rem;
-        min-width: 100px; }
+      @media only screen and (max-width: 595px) {
+        .navbar.navbar-custom .navbar-brand .navbar-item.is-logo img {
+          max-height: 3rem;
+          min-width: 100px; } }
     .navbar.navbar-custom .navbar-brand .logo-ayto-top {
       position: absolute;
       left: 160px; }

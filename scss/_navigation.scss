@@ -29,7 +29,8 @@
             position: fixed;
             width: 100%;
             inset: 0;
-            top: 65px;
+            top: 63px;
+            @include radius;
             a.navbar-item, a.navbar-link{
                 padding-top: .6rem;
                 padding-bottom: .6rem;
@@ -66,10 +67,13 @@
             &:hover, &:active, &.is-active{
                 transform: rotate(2deg);
             }
-            img{
-                max-height: 3rem;
-                min-width: 100px;
+            @media only screen and (max-width: 595px) {
+                img{
+                    max-height: 3rem;
+                    min-width: 100px;
+                }
             }
+            
         }
         .logo-ayto-top{
             position: absolute;
