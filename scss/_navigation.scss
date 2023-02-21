@@ -56,8 +56,11 @@
         align-items: center;
         .navbar-item.is-logo{
             img{
-                max-height: 4.5rem;
+                max-height: 4rem;
                 min-width: 140px;
+                @include desktop{
+                    max-height: 4.5rem;
+                }
             }
             transition: transform .5s;
             &:hover, &:active, &.is-active{
@@ -65,14 +68,19 @@
             }
         }
         .logo-ayto-top{
-            display: none;
+            position: absolute;
+            left: 160px;
+            img{
+                width: 160px;
+            }
+            @include tablet{
+                margin-left: 2rem;
+            }
             @include desktop{
-                display: block;
+                position: relative;
+                left: auto;
                 margin-left: 1rem;
                 margin-right: 1rem;
-                img{
-                    width: 160px;
-                }
             }
             @include widescreen{
                 img{

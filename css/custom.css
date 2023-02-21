@@ -6524,19 +6524,27 @@ section.section {
     .navbar.navbar-custom .navbar-brand .navbar-item.is-logo {
       transition: transform .5s; }
       .navbar.navbar-custom .navbar-brand .navbar-item.is-logo img {
-        max-height: 4.5rem;
+        max-height: 4rem;
         min-width: 140px; }
+        @media screen and (min-width: 1024px) {
+          .navbar.navbar-custom .navbar-brand .navbar-item.is-logo img {
+            max-height: 4.5rem; } }
       .navbar.navbar-custom .navbar-brand .navbar-item.is-logo:hover, .navbar.navbar-custom .navbar-brand .navbar-item.is-logo:active, .navbar.navbar-custom .navbar-brand .navbar-item.is-logo.is-active {
         transform: rotate(2deg); }
     .navbar.navbar-custom .navbar-brand .logo-ayto-top {
-      display: none; }
+      position: absolute;
+      left: 160px; }
+      .navbar.navbar-custom .navbar-brand .logo-ayto-top img {
+        width: 160px; }
+      @media screen and (min-width: 769px), print {
+        .navbar.navbar-custom .navbar-brand .logo-ayto-top {
+          margin-left: 2rem; } }
       @media screen and (min-width: 1024px) {
         .navbar.navbar-custom .navbar-brand .logo-ayto-top {
-          display: block;
+          position: relative;
+          left: auto;
           margin-left: 1rem;
-          margin-right: 1rem; }
-          .navbar.navbar-custom .navbar-brand .logo-ayto-top img {
-            width: 160px; } }
+          margin-right: 1rem; } }
       @media screen and (min-width: 1216px) {
         .navbar.navbar-custom .navbar-brand .logo-ayto-top img {
           width: 190px; } }
