@@ -161,16 +161,20 @@ footer.footer{
 	.address:not(:last-of-type){
 		margin-bottom: 1.5rem;
 	}
-	.legal-text{
-		margin-top:1rem;
-		font-size: $tiny;
-		color: $gray-dark;
+	.logo-ayto-footer{
+		margin-top: 1rem;
 		@include tablet{
 			margin-top: auto;
 		}
-		@include fullhd{
-			font-size: $small;
+		img{
+			width: 200px;
 		}
+	}
+	.legal-text{
+		margin-top:3rem;
+		font-size: $tiny;
+		color: $gray-dark;
+		text-align: center;
 	}
 }
 

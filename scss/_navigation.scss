@@ -64,6 +64,22 @@
                 transform: rotate(2deg);
             }
         }
+        .logo-ayto-top{
+            display: none;
+            @include desktop{
+                display: block;
+                margin-left: 1rem;
+                margin-right: 1rem;
+                img{
+                    width: 160px;
+                }
+            }
+            @include widescreen{
+                img{
+                    width: 190px;
+                }
+            }
+        }
         .navbar-burger{
             border: 1px solid $gray;
             border-radius: 100px;
