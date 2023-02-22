@@ -49,6 +49,25 @@ header.hero{
 			}
 		}
 	}
+	.hero-video{
+		video{
+			aspect-ratio: 4 / 3;
+			object-fit: cover;
+			min-width: 100%;
+			border-radius: 1rem;
+			min-height: 350px;
+			@include tablet{
+				aspect-ratio: 16 / 9;
+				@include radius-lg;
+				min-height: none;
+			}
+			display: block;
+			opacity: .4;
+			@include desktop{
+				aspect-ratio: 26 / 9;
+			}
+		}
+	}
 	.hero-copy{
 		position: absolute;
 		top: 4rem;
